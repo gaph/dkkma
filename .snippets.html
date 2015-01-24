@@ -1,0 +1,77 @@
+<!--
+<div class="container portfolio">
+<div class="row">
+<div class="col-md-6">
+
+<div class="row">
+{% for portfolio in site.portfolio limit:2 %}
+<div class="col-md-6 preview">
+<a href="{{ portfolio.url }}">
+<div class="image" style="background-image: url({{ site.project_img }}{{ portfolio.thumbnail }});">
+<div class="portfolio-overlay"><div class="portfolio-excerpt">{{ portfolio.excerpt }}</div></div>
+</div>
+</a>
+</div>
+{% endfor %}
+</div>
+
+<div class="row row2">
+{% for portfolio in site.portfolio limit:2 offset:2 %}
+<div class="col-md-6 preview">
+<a href="">
+<div class="image" style="background-image: url({{ site.project_img }}{{ portfolio.thumbnail }});">
+<div class="portfolio-excerpt">{{ portfolio.excerpt }}</div>
+</div>
+</a>
+</div>
+{% endfor %}
+</div>
+
+</div>
+<div class="col-md-6 preview">
+{% for portfolio in site.portfolio limit:1 offset:4 %}
+<a href="">
+<div class="image image-large" style="background-image: url({{ site.project_img }}{{ portfolio.thumbnail }});">
+<div class="portfolio-excerpt">{{ portfolio.excerpt }}</div>
+</div>
+</a>
+{% endfor %}
+</div>
+</div>
+</div>
+
+<script>
+var t = new Trianglify({
+x_gradient: ["#C04848", "#480048"],
+y_gradient: ["#C04848", "#480048"],
+noiseIntensity: 0.1,
+cellpadding: 10,
+cellsize: 100});
+var pattern = t.generate(document.body.clientWidth, 600);
+document.getElementById("header").setAttribute('style', 'background-image: '+pattern.dataUrl);
+</script>
+
+<script>
+var t = new Trianglify({
+x_gradient: ["#C04848", "#480048"],
+y_gradient: ["#C04848", "#480048"],
+noiseIntensity: 0.1,
+cellpadding: 10,
+cellsize: 100});
+var pattern = t.generate(document.body.clientWidth, document.body.clientHeight);
+document.getElementById("splash").setAttribute('style', 'background-image: '+pattern.dataUrl);
+</script>
+
+{% for post in site.posts %}
+{% if post.categories contains 'blog' %}
+<div class="post">
+<h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+<p class="meta">Date: {{ post.date }}</p>
+<div class="entry">
+{{ post.content | strip_html | truncatewords: 100 }}
+</div>
+</div>
+{% endif %}
+{% endfor %}
+
+-->

@@ -1,0 +1,99 @@
+---
+layout: page
+title: Blog
+group: "navigation"
+permalink: blog/
+---
+
+  <div class="container blog">
+    <div class="row">
+      <div class="col-sm-3">
+
+        {% for category in site.categories %}
+        {{ category | first }}<br>
+        {% endfor %}
+
+        <hr>
+
+        {% for tag in site.tags %}
+        {{ tag | first }}<br>
+        {% endfor %}
+
+        <hr>
+
+        {% for tag in site.tags %}
+        {% assign t = tag | first %}
+        {% assign posts = tag | last %}
+
+        {{ t | downcase }}
+        <ul>
+          {% for post in posts %}
+          {% if post.tags contains t %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+        {% endfor %}
+
+        <hr>
+
+        <ul class="tags">
+          {% for tag in site.tags %}
+          {% assign t = tag | first %}
+          {% assign posts = tag | last %}
+          <li>{{t | downcase | replace:" ","-" }} has {{ posts | size }} posts</li>
+          {% endfor %}
+        </ul>
+
+        <hr>
+
+        <ul class="tags">
+          {% for category in site.categories %}
+          {% assign t = category | first %}
+          {% assign posts = category | last %}
+          <li>{{t | downcase | replace:" ","-" }} has {{ posts | size }} posts</li>
+          {% endfor %}
+        </ul>
+
+      </div>
+
+      <!-- 1st post -->
+      <div class="col-sm-9">
+
+        {% for post in site.posts limit:1 %}
+        <p class="meta">Date: {{ post.date | date: "%b %-d, %Y" }}</p>
+
+        <h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+        <a href="{{ post.url }}"><img class="cover" alt="{{ post.title }}" src="{{ site.blog_img }}{{ post.cover }}"></a>
+
+        <p>{{ post.excerpt }}</p>
+
+        <p><a alt={{ post.title }}"" href="{{ post.url }}">Read More >></a></p>
+
+        {% endfor %}
+
+        {% for post in site.posts limit:20 offset:1 %}
+
+        <div data-sr class="row">
+          <hr>
+          <div class="col-sm-4">
+            <a href="{{ post.url }}"><img alt="{{ post.title }}" src="{{ site.blog_img }}{{ post.cover }}"></a>
+          </div>
+          <div class="col-sm-8">
+            {{ post.categories | join: ', '}}
+            <h2 class="title sub"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p class="meta sub">Date: {{ post.date | date: "%b %-d, %Y" }}</p>
+            <p>{{ post.excerpt }}</p>
+            <p><a alt={{ post.title }}"" href="{{ post.url }}">Read More >></a></p>
+          </div>
+        </div>
+
+        {% endfor %}
+
+        </div>
+      </div>
+    </div>

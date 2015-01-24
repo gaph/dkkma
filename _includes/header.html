@@ -1,0 +1,21 @@
+<header class="site-header">
+
+  <div class="container">
+
+    <a href="{{ site.baseurl }}/" class="logo"></a>
+
+    <div class="nav">
+      <ul>
+        {% assign pages_list = site.pages %}
+        {% assign group = 'navigation' %}
+        {% include pages_list %}
+      </ul>
+    </div>
+
+    </nav>
+
+  </div>
+
+</header>
+
+<body>

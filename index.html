@@ -1,0 +1,56 @@
+---
+layout: home
+---
+<div id="header" class="splash-full-height">
+<div class="container">
+
+  <div class="center">
+    <div class="call-out-home">
+      <p>We design and develop solutions.<br>
+        <a href="{{ site.baseurl }}/contact"><span class="call-out-link">get in touch</span></a></p>
+    </div>
+    <div class="call-out-sub call-out-sub-home">
+    </div>
+  </div>
+</div>
+<div class="see-more">
+  <a href="#more"><p>See more</p></a>
+</div>
+</div>
+
+<div class="container" id="more">
+  <div data-sr class="subsection">
+    <div class="row ">
+      {% for portfolio in site.portfolio limit:3 %}
+      <div class="col-md-3 preview">
+        <a class="image" href="{{ portfolio.url }}" style="background-image: url({{ site.project_img }}{{ portfolio.thumbnail }})"></a>
+        <a href="{{ portfolio.url }}">{{ portfolio.excerpt }}</a>
+      </div>
+      {% endfor %}
+      <div class="col-md-3 title">Latest Projects</div>
+    </div>
+
+    <div class="row">
+      {% for portfolio in site.portfolio limit:3 offset:3 %}
+      <div class="col-md-3 preview">
+        <a class="image" href="{{ portfolio.url }}" style="background-image: url({{ site.project_img }}{{ portfolio.thumbnail }})"></a>
+        <a href="{{ portfolio.url }}">{{ portfolio.excerpt }}</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div data-sr class="subsection">
+    <div class="row">
+      {% for post in site.posts limit:3 %}
+      <div class="col-md-3 preview">
+        <a class="image" href="{{ post.url }}" style="background-image: url({{ site.blog_img }}{{ post.cover }})"></a>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </div>
+      {% endfor %}
+      <div class="col-md-3 title">Latest Posts</div>
+    </div>
+  </div>
+</div>
+
+{% include get-in-touch.html %}

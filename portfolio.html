@@ -1,0 +1,17 @@
+---
+layout: page-custom
+title: Portfolio
+group: "navigation"
+permalink: portfolio/
+---
+
+<div class="container portfolio-old" id="more">
+    <div class="row ">
+      {% for portfolio in site.portfolio limit:64 %}
+      <div data-sr class="col-md-3 preview">
+        <a class="image" href="{{ portfolio.url }}" style="background-image: url({{ site.project_img }}{{ portfolio.thumbnail }})"></a>
+        <a href="{{ portfolio.url }}" target="_self">{{ portfolio.categories }}</a>
+      </div>
+      {% endfor %}
+    </div>
+</div>

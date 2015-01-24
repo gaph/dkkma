@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<header id="header" class="page-header">
+  <div class="container">
+
+    <h1 class="page-title">DKKMA Blog</h1>
+
+  </div>
+</header>
+
+<div class="post container">
+
+  <div class="row">
+    <div class="col-md-9">
+
+      <header class="header">
+
+        {{ page.categories }}
+        <h1 class="title">{{ page.title }}</h1>
+        <p class="meta">by <strong>DKKMA</strong> on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+
+        {% if page.cover != blank %}<img class="cover" src="{{ site.blog_img }}{{ page.cover }}"> {% endif %}
+      </header>
+
+      <div class="row">
+        <div class="col-md-10">
+
+          <article class="post-content">
+            {{ content }}
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
