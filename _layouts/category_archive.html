@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<header id="header" class="page-header">
+  <div class="container">
+
+    <h1 class="page-title">DKKMA Blog</h1>
+    <h2 class="page-slogan">{{ page.category | capitalize }}</h2>
+
+  </div>
+</header>
+
+<div class="container blog">
+
+  {% include blog-category-nav.html %}
+
+  <div class="row">
+    <div class="col-sm-2">
+
+      {% include blog-category-sidebar.html %}
+
+    </div>
+    <div class="col-sm-8">
+
+      {{ content }}
+
+    </div>
+  </div>
+</div>

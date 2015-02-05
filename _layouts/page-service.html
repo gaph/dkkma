@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{% include mobilenav.html %}
+
+<header class="page-header-services" style="background-image: url({{ site.img }}{{ page.cover }})">
+  <div class="container">
+
+    <h1 class="page-title"><span>{{ page.pagetitle }}</span></h1>
+    <h2 class="page-slogan"><span>{{ page.slogan }}</span></h2>
+
+  </div>
+</header>
+
+{% include servicenav.html %}
+
+<article class="page-content justify">
+  {{ content }}
+</article>
+
+{% include portfolio-excerpt.html %}
+
+{% include get-in-touch.html %}

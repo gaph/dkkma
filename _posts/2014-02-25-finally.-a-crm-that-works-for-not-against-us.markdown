@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "Finally. A CRM that works for, not against us."
+date:   2014-02-25 08:00:00
+category: Productivity
+excerpt: "If you are a participant of this years Awwwards, we kindly ask you for your vote and feedback on our current website."
+cover: finally-a-crm-that-works-for-not-against-us.jpg
+---
+
+Whether you are an established business or just setting up, there is one question all of us have to face: **What CRM system works best for us?**
+
+Our first CRM was Highrise. It looked good (designers dig that), was easy enough to set-up and came with an iPhone app. On top of that, it shared the login information with our project management system 'Basecamp'. So, you may think that Highrise is IT ... STOP! We soon realized that a very important part of the conversation was missing: The actual conversation. Unless you went in and recorded every client conversation manually, you soon lost track of what was discussed - this was especially evident if someone went on vacation for a few days. We did not want to share one e-mail account, we wanted to have the insight in project-related client conversation.
+
+At this point we started looking for another CRM. Here are few we have tried:
+
+- Salesforce: Sync Salesforce with Google, Exchange
+- Sugar CRM
+- Base CRM
+- Microsoft Dynamics
+- vTiger
+- RelateIQ
+- CapsuleCRM
+- You Don't need a CRM
+- Contactually
+
+There are some great candidates here. Unfortunately most of them were either too complicated, did not integrate with our e-mail or simply could not keep up with our paste.
+
+### Meet Close.io
+
+Around mid-January we found a CRM called Close.io and just looking at the feature list, I was smiling.
+
+- e-mail Integration (Exchange, Google, IMAP..) TICK
+- Native Windows, Mac Application (Web app) TICK
+- Call integration (good to have for the future) TICK
+- Great Team, personal support TICK
+- iPhone app (Coming soon!) TICK
+- Easy to set-up TICK
+- Mass Mailing TICK
+
+I could go on an on.. however the most important feature is that it took us less then an hour to understand all features, get around the system and configure it to our liking.
+
+![Close.io CRM]({{ site.blog_img }}finally-a-crm-that-works-for-not-against-us-01.jpg)
+
+If you would like to know more about the other CRM providers we have tested, please leave a comment. We would be more then happy to share our experience.

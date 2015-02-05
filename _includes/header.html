@@ -4,18 +4,22 @@
 
     <a href="{{ site.baseurl }}/" class="logo"></a>
 
-    <div class="nav">
+    <div class="nav hidden-xs">
       <ul>
-        {% assign pages_list = site.pages %}
-        {% assign group = 'navigation' %}
-        {% include pages_list %}
+        {% for link in site.navigation %}
+        {% assign current = nil %}
+        {% if page.url contains link.url %}
+        {% assign current = 'active' %}
+        {% endif %}
+        <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+        {% endfor %}
       </ul>
     </div>
-
-    </nav>
 
   </div>
 
 </header>
 
-<body>
+<body data-spy="scroll" data-target=".navbar-sidenav">

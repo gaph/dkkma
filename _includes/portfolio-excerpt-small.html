@@ -1,0 +1,14 @@
+<div class="container portfolio-old excerpt">
+  <h3>Recently completed projects</h3>
+  <div class="row ">
+    {% assign portfolio = site.portfolio | sort: 'date' | reverse %}
+    {% for portfolio in portfolio limit:3  %}
+    <div data-sr class="col-md-4 preview">
+      <div class="border-bottom">
+        <a class="image" href="{{ portfolio.url }}" style="background-image: url({{ site.project_img }}{{ portfolio.thumbnail }})"><div class="overlay"></div></a>
+        <a href="{{ portfolio.url }}" target="_self">in <strong>{{ portfolio.category | join: ', '}}</strong>, {{ portfolio.technology }}</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

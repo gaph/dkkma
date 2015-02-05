@@ -1,19 +1,16 @@
 # Site settings
 title: DKKMA
 email: hellouk@dkkma.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: Step inside the world of advertising, design and inbound marketing agency DKKMA, based in London, United Kingdom.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.dkkma.com" # the base hostname & protocol for your site
 twitter_username: dkkma
 github_username:  dkkma
 
-# Build settings
-markdown: kramdown
-
 permalink: /blog/entry/:title
+
+paginate: 10
+paginate_path: "/blog/page/:num"
 
 project_img: /assets/images/projects/
 blog_img: /assets/images/blog/
@@ -21,13 +18,52 @@ img: /assets/images/
 
 collections:
   - portfolio
+  - services
+  - testimonial
+
+category_archive:
+  path: /blog/
 
 collections:
   portfolio:
     output: true
     permalink: /portfolio/entry/:title/
+  services:
+    output: true
+    permalink: /services/:title/
+  testimonial:
+    output: true
+    permalink: /testimonial/:title/
+
+# Build settings
+markdown: kramdown
+include: [.htaccess]
 
 gems:
   - jekyll-sitemap
 
-include: [.htaccess]
+navigation:
+ - title: Contact
+   url: /contact
+ - title: Testimonial
+   url: /testimonial
+ - title: Blog
+   url: /blog
+ - title: About
+   url: /about
+ - title: Portfolio
+   url: /portfolio
+ - title: Services
+   url: /services
+
+servicenav:
+ - title: Web Design
+   url: /services/web-design
+ - title: E-Commerce
+   url: /services/magento-ecommerce
+ - title: Packaging
+   url: /services/packaging
+ - title: Newsletter
+   url: /services/newsletter
+ - title: Advertisement
+   url: /services/advertisement

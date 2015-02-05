@@ -1,0 +1,25 @@
+---
+layout: page-custom
+title: Testimonial
+pagetitle: Testimonials
+slogan: Don't take our word for it!
+permalink: /testimonial/
+---
+<div class="container">
+
+{% assign testimonial = site.testimonial %}
+{% for testimonial in testimonial %}
+
+<h3>{{ testimonial.person }}, {{ testimonial.client }}<br>
+  <small>{{ testimonial.city }}, {{ testimonial.country }}</small></h3>
+  <div class="columns-3">{{ testimonial.content }}</div>
+
+  <p><a href="{{ site.baseurl }}/portfolio/entry/{{ testimonial.project }}"><strong>See</strong> what we've done for them</a>.
+
+  <hr>
+
+{% endfor %}
+
+</div>
+
+{% include get-in-touch.html %}

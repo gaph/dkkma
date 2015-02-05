@@ -4,9 +4,13 @@ layout: home
 <div id="header" class="splash-full-height">
 <div class="container">
 
-  <div class="center">
+  <div style="margin-top:70px;">
+    {% include mobilenav.html %}
+  </div>
+
+  <div class="center hidden-xs">
     <div class="call-out-home">
-      <p>We design and develop solutions.<br>
+      <p>We design and develop the web.<br>
         <a href="{{ site.baseurl }}/contact"><span class="call-out-link">get in touch</span></a></p>
     </div>
     <div class="call-out-sub call-out-sub-home">
@@ -19,38 +23,136 @@ layout: home
 </div>
 
 <div class="container" id="more">
+
   <div data-sr class="subsection">
+    <h2>Last year alone, DKKMA helped 14 companies execute 53 successful projects.<br>
+      <small>Here's what we have accomplished:</small></h2>
     <div class="row ">
-      {% for portfolio in site.portfolio limit:3 %}
+      {% assign portfolio = site.portfolio | sort: 'date' | reverse %}
+      {% for portfolio in portfolio limit:3  %}
       <div class="col-md-3 preview">
-        <a class="image" href="{{ portfolio.url }}" style="background-image: url({{ site.project_img }}{{ portfolio.thumbnail }})"></a>
-        <a href="{{ portfolio.url }}">{{ portfolio.excerpt }}</a>
+          <a class="image" href="{{ portfolio.url }}" style="background-image: url({{ site.project_img }}{{ portfolio.thumbnail }})"><div class="overlay"></div></a>
+          <a href="{{ portfolio.url }}" target="_self">in <strong>{{ portfolio.category | join: ', '}}</strong></a>
       </div>
       {% endfor %}
-      <div class="col-md-3 title">Latest Projects</div>
+      <div class="col-md-3 preview title hidden-xs">Selected Projects</div>
     </div>
 
     <div class="row">
-      {% for portfolio in site.portfolio limit:3 offset:3 %}
+      {% assign portfolio = site.portfolio | sort: 'date' | reverse %}
+      {% for portfolio in portfolio limit:3 offset:3 %}
       <div class="col-md-3 preview">
-        <a class="image" href="{{ portfolio.url }}" style="background-image: url({{ site.project_img }}{{ portfolio.thumbnail }})"></a>
-        <a href="{{ portfolio.url }}">{{ portfolio.excerpt }}</a>
+        <a class="image" href="{{ portfolio.url }}" style="background-image: url({{ site.project_img }}{{ portfolio.thumbnail }})"><div class="overlay"></div></a>
+        <a href="{{ portfolio.url }}" target="_self">in <strong>{{ portfolio.category | join: ', '}}</strong></a>
       </div>
       {% endfor %}
     </div>
   </div>
+
+  <h2 data-sr class="call-out-header">Visit our <a class="stronglink" href="{{ site.baseurl }}/portfolio">portfolio</a> or find out more about our <a class="stronglink" href="{{ site.baseurl }}/services/web-design/">web design</a> capabilities.</h2>
 
   <div data-sr class="subsection">
     <div class="row">
       {% for post in site.posts limit:3 %}
       <div class="col-md-3 preview">
-        <a class="image" href="{{ post.url }}" style="background-image: url({{ site.blog_img }}{{ post.cover }})"></a>
+        <a class="image" href="{{ post.url }}" style="background-image: url({{ site.blog_img }}{{ post.cover }})"><div class="overlay"></div></a>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </div>
       {% endfor %}
-      <div class="col-md-3 title">Latest Posts</div>
+      <div class="col-md-3 preview title hidden-xs">Latest Posts</div>
     </div>
   </div>
-</div>
+
+  <div data-sr class="subsection">
+  <h2>DKKMA. A strong partner for your business.<br>
+    <small>Research, Design & Development.</small></h2>
+      <div class="row services">
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-sm-4">
+              <div>
+                <ul class="list-unstyled">
+                  <li>
+                    <h4>Research & Audits</h4>
+                  </li>
+                  <li>
+                    <h4>Idea Generation</h4>
+                  </li>
+                  <li>
+                    <h4>Brand Strategy</h4>
+                  </li>
+                  <li>
+                    <h4>Web Strategy</h4>
+                  </li>
+                  <li>
+                    <h4>Content Planning</h4>
+                  </li>
+                  <li>
+                    <h4>Prioritization & Metrics</h4>
+                  </li>
+                  <li>
+                    <h4>Training & Education</h4>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="col-sm-4">
+              <ul class="list-unstyled">
+                <li>
+                  <h4>Logotype</h4>
+                </li>
+                <li>
+                  <h4>Graphic Systems</h4>
+                </li>
+                <li>
+                  <h4>Brand Books & Guidelines</h4>
+                </li>
+                <li>
+                  <h4>Company Collateral</h4>
+                </li>
+                <li>
+                  <h4>Icons & Info Graphics</h4>
+                </li>
+                <li>
+                  <h4>Inbound Marketing</h4>
+                </li>
+                <li>
+                  <h4>Print & Packaging</h4>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-sm-4">
+              <ul class="list-unstyled">
+                <li>
+                  <h4>Software Architecture</h4>
+                </li>
+                <li>
+                  <h4>Database Design</h4>
+                </li>
+                <li>
+                  <h4>Prototyping</h4>
+                </li>
+                <li>
+                  <h4>Interface Development</h4>
+                </li>
+                <li>
+                  <h4>Software Development</h4>
+                </li>
+                <li>
+                  <h4>Quality Assurance</h4>
+                </li>
+                <li>
+                  <h4>Maintenance</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 title hidden-xs">Key Capabilities</div>
+      </div>
+    </div>
+  </div>
 
 {% include get-in-touch.html %}

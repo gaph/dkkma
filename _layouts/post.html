@@ -1,10 +1,14 @@
 ---
 layout: default
 ---
+
+{% include mobilenav.html %}
+
 <header id="header" class="page-header">
   <div class="container">
 
     <h1 class="page-title">DKKMA Blog</h1>
+    <h2 class="page-slogan">Things we talk about</h2>
 
   </div>
 </header>
@@ -16,17 +20,17 @@ layout: default
 
       <header class="header">
 
-        {{ page.categories }}
         <h1 class="title">{{ page.title }}</h1>
         <p class="meta">by <strong>DKKMA</strong> on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 
         {% if page.cover != blank %}<img class="cover" src="{{ site.blog_img }}{{ page.cover }}"> {% endif %}
+
       </header>
 
       <div class="row">
         <div class="col-md-10">
 
-          <article class="post-content">
+          <article class="post-content justify">
             {{ content }}
           </article>
 
@@ -35,5 +39,22 @@ layout: default
 
     </div>
   </div>
-
 </div>
+
+  <div id="get-in-touch">
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dunkelkammer'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments.</a></noscript>
+
+  </div>

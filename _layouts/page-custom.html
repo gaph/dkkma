@@ -2,13 +2,30 @@
 layout: default
 ---
 
+{% include mobilenav.html %}
+
+{% if page.pagetitle != blank %}
+
 <header id="header" class="page-header">
   <div class="container">
-    
+
+    <h1 class="page-title">{{ page.pagetitle }}</h1>
+    <h2 class="page-slogan">{{ page.slogan }}</h2>
+
+  </div>
+</header>
+
+{% else %}
+
+<header id="header" class="page-header">
+  <div class="container">
+
     <h1 class="page-title">{{ page.title }}</h1>
 
   </div>
 </header>
+
+{% endif %}
 
   <article class="page-content">
     {{ content }}

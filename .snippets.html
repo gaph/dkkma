@@ -75,3 +75,64 @@ document.getElementById("splash").setAttribute('style', 'background-image: '+pat
 {% endfor %}
 
 -->
+
+{% if paginator.previous_page %}
+You are on <strong>Page {{ paginator.page }}</strong>
+{% else %}
+{% for post in site.posts limit:1 %}
+<p class="meta">Date: {{ post.date | date: "%b %-d, %Y" }}</p>
+
+<h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+<a href="{{ post.url }}"><img class="cover" alt="{{ post.title }}" src="{{ site.blog_img }}{{ post.cover }}"></a>
+
+<p class="justify">{{ post.excerpt }}</p>
+
+<p><a alt={{ post.title }}"" href="{{ post.url }}">Read More >></a></p>
+
+{% endfor %}
+{% endif %}
+
+{% for post in paginator.posts offset:1 %}
+
+<div data-sr class="row">
+  <hr>
+  <div class="col-sm-4">
+    <a href="{{ post.url }}"><img alt="{{ post.title }}" src="{{ site.blog_img }}{{ post.cover }}"></a>
+  </div>
+  <div class="col-sm-8">
+    {{ post.categories | join: ', '}}
+    <h2 class="title sub"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <p class="meta sub">Date: {{ post.date | date: "%b %-d, %Y" }}</p>
+    <p class="justify">{{ post.excerpt }}</p>
+    <p><a alt={{ post.title }}"" href="{{ post.url }}">Read More >></a></p>
+  </div>
+</div>
+
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+  <a rel="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+  You are on the first page:
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+  {% if page == paginator.page %}
+  <em>{{ page }}</em>
+  {% elsif page == 1 %}
+  <a href="{{ '/blog' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+  {% else %}
+  <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+  {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+  <a rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+  <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
