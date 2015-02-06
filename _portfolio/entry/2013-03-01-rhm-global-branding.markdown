@@ -8,12 +8,12 @@ country: "Singapore"
 category: Print
 technology: "Adobe Illustrator"
 excerpt: "This is an excerpt"
-thumbnail: nex-katana-banner_thumb.jpg
+thumbnail: rmh-global-branding_thumb.jpg
 preview:
 project_url:
 ---
 
 RHM Global approached us to have their existing branding redone. We've started working on a new logo as well as a business card. A website will follow soon.
 
-![My helpful screenshot]({{ site.project_img }}nex-katana-banner_01.jpg)
-![My helpful screenshot]({{ site.project_img }}nex-katana-banner_02.jpg)
+![My helpful screenshot]({{ site.project_img }}rmh-global-branding_01.jpg)
+![My helpful screenshot]({{ site.project_img }}rmh-global-branding_02.jpg)

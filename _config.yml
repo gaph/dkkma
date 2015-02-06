@@ -9,20 +9,23 @@ github_username:  dkkma
 
 permalink: /blog/entry/:title
 
-paginate: 10
-paginate_path: "/blog/page/:num"
+# Blog index is outside of _blog
+# paginate: 10
+# paginate_path: "/blog/page/:num"
 
+# img quick link
 project_img: /assets/images/projects/
 blog_img: /assets/images/blog/
 img: /assets/images/
 
+category_archive:
+  path: /blog/
+
+# Collections
 collections:
   - portfolio
   - services
   - testimonial
-
-category_archive:
-  path: /blog/
 
 collections:
   portfolio:
@@ -35,13 +38,7 @@ collections:
     output: true
     permalink: /testimonial/:title/
 
-# Build settings
-markdown: kramdown
-include: [.htaccess]
-
-gems:
-  - jekyll-sitemap
-
+# Navigation
 navigation:
  - title: Contact
    url: /contact
@@ -59,11 +56,18 @@ navigation:
 servicenav:
  - title: Web Design
    url: /services/web-design
- - title: E-Commerce
-   url: /services/magento-ecommerce
+ - title: eCommerce
+   url: /services/ecommerce
  - title: Packaging
    url: /services/packaging
  - title: Newsletter
    url: /services/newsletter
  - title: Advertisement
    url: /services/advertisement
+
+# Build settings
+markdown: kramdown
+include: [.htaccess]
+
+gems:
+  - jekyll-sitemap

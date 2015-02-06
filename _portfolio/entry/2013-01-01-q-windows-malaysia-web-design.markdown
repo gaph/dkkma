@@ -16,5 +16,5 @@ project_url: http://q-windows.com.my/
 Q-Windows Malaysia approached us about a new site design. Their goal was to attract more homeowner to purchase their window and door products.
 
 ![My helpful screenshot]({{ site.project_img }}q-windows-website_01.jpg)
-![My helpful screenshot]({{ site.project_img }}q-windows-website_01.jpg)
-![My helpful screenshot]({{ site.project_img }}q-windows-website_01.jpg)
+![My helpful screenshot]({{ site.project_img }}q-windows-website_02.jpg)
+![My helpful screenshot]({{ site.project_img }}q-windows-website_03.jpg)

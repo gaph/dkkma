@@ -1,0 +1,19 @@
+RewriteEngine On
+
+RewriteBase /
+RewriteCond %{ENV:HTTPS} !on [NC]
+RewriteRule ^(.*)$ https://www.dkkma.com/$1 [R,L]
+
+ErrorDocument 404 /404.html
+
+# Redirect About
+Redirect /pages/about https://www.dkkma.com/about
+
+# Redirect Newsletter
+Redirect /pages/newsletter https://www.dkkma.com/newsletter
+
+# Redirect Privacy
+Redirect /pages/privacy https://www.dkkma.com/privacy
+
+# Redirect Privacy
+Redirect /de/angebot-webdesign https://www.dkkma.com/de/de/angebot-webdesign

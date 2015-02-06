@@ -9,11 +9,11 @@ category: Digital
 technology: "static HTML"
 excerpt: "This is an excerpt"
 thumbnail: nutriline-website_thumb.jpg
-preview: nutriline-website_preview.jpg
+preview: 
 project_url: http://www.sensecellplatinum.com/
 ---
 
 Web design and branding for a healthcare and cosmetics product supplier based in Kuala Lumpur.
 
-![My helpful screenshot]({{ site.project_img }}nutriline-website_01.jpg)
 ![My helpful screenshot]({{ site.project_img }}nutriline-website_02.jpg)
+![My helpful screenshot]({{ site.project_img }}nutriline-website_01.jpg)

@@ -19,15 +19,18 @@ permalink: portfolio/
     {% endfor %}
   </div>
 
-  <div class="section blank large">
-    <p>We're most proud of these projects, but you can find more great projects in specific categories, too. And if you don't see exactly what you're looking for, it's because we haven't made it for you yet -- but we can, and we will.</p>
+</div>
+
+  <div class="section blank background large">
+    <div class="container">
+      <p>We're most proud of these projects, but you can find more great projects in specific categories, too. And if you don't see exactly what you're looking for, it's because we haven't made it for you yet -- but we can, and we will.</p>
+    </div>
   </div>
+
+<div class="container portfolio-old">
 
   <h3>All recent projects</h3>
 
-</div>
-
-<div class="container portfolio-old">
     <div class="row ">
       {% assign portfolio = site.portfolio | sort: 'date' | reverse %}
       {% for portfolio in portfolio limit:64  %}

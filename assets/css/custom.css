@@ -57,9 +57,9 @@ body {
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 34px;
   font-weight: 300;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .post h3 {
@@ -79,6 +79,12 @@ h4 {
 .post img {
   margin-top: 12px;
   margin-bottom: 12px;
+}
+
+.centered h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
 }
 
 .blog .title.sub {
@@ -147,6 +153,7 @@ img.grayscale:hover {
 
 #header {
   min-height: 196px;
+  max-height: 1000px;
 }
 
 .sub .site-header {
@@ -217,7 +224,7 @@ img.grayscale:hover {
 
 .page-header .page-title {
   font-family: "merriweather",serif;
-  font-size: 40px;
+  font-size: 46px;
   font-weight: 500;
 }
 
@@ -286,8 +293,8 @@ img.grayscale:hover {
   margin-bottom: 120px;
   margin-left: auto;
   margin-right: auto;
-  color: #fff;
-  min-width: 618px;
+  color: #FFF;
+  min-width: 362px;
 }
 
 .call-out-link {
@@ -743,7 +750,7 @@ p.4columns {
 }
 
 .categories .nav-pills>li+li {
-  margin-left: 11px;
+  margin-left: 22px;
 }
 
 .categories .nav-pills>li.active>a, .categories .nav-pills>li.active>a:focus, .categories .nav-pills>li.active>a:hover {
@@ -756,18 +763,29 @@ p.4columns {
   margin-bottom: 40px;
 }
 
+.section.blank.background {
+  margin-top: 20px;
+  padding-top: 60px;
+  margin-bottom: 10px;
+  padding-bottom: 50px;
+  background-color: #B13F48;
+  color: #FFF;
+}
+
 .large {
-  font-size: 120%;
+  font-size: 180%;
 }
 
 .section.center {
-  padding-bottom: 20px;
-  margin-bottom: 28px;
+  padding-bottom: 42px;
+  margin-bottom: 40px;
   border-bottom: 1px solid #EEE;
 }
 
-.section.last {
-
+.section.center.last {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 0;
 }
 
 .navbar-sidenav .nav-tabs>li>a {
@@ -802,7 +820,10 @@ p.4columns {
 }
 
 .centered {
-  padding: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .nav>li>a:focus, .nav>li>a:hover {
@@ -812,4 +833,44 @@ p.4columns {
 
 #footer h3 {
   text-transform: uppercase;
+}
+
+.page-content .categories a {
+  color: #202020;
+}
+
+.title a:focus, .title a:hover {
+  text-decoration: none;
+  color: #B13F48;
+}
+
+.title a {
+  color: #202020;
+}
+
+.row.entry.small {
+  padding-top: 30px;
+  margin-top: 20px;
+  border-top: 1px solid #EEE;
+}
+
+.countries {
+  margin-top: 20px;
+}
+
+.flag-height {
+  min-height: 62px;
+}
+
+.flag {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.flag.grey {
+
+}
+
+h3.first {
+  margin-top: 10px;
 }
