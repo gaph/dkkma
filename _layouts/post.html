@@ -5,11 +5,13 @@ layout: default
 {% include mobilenav.html %}
 
 <header id="header" class="page-header">
-  <div class="container">
+  <div class="blackoverlay">
+    <div class="container">
 
-    <h1 class="page-title">DKKMA Blog</h1>
-    <h2 class="page-slogan">Things we talk about</h2>
+      <h1 class="page-title">DKKMA Blog</h1>
+      <h2 class="page-slogan">Things we talk about</h2>
 
+    </div>
   </div>
 </header>
 
@@ -34,6 +36,20 @@ layout: default
             {{ content }}
           </article>
 
+            <div class="share">
+              <div class="social">
+                <span class="facebook">
+                  <iframe src="https://www.facebook.com/plugins/like.php?href={{ site.url }}{{ page.url }}&amp;show_faces=false&amp;layout=button" scrolling="no" frameborder="0" style="height: 20px; width: 66px" allowTransparency="true"></iframe>
+                </span>
+                <span class="twitter">
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title }}" data-via="DKKMA" data-count="none">Tweet</a>
+                </span>
+                <span class="google">
+                  <div class="g-plus" data-action="share" data-annotation="none" data-href="{{ site.url }}{{ page.url }}"></div>
+                </span>
+              </div>
+            </div>
+
         </div>
       </div>
 
@@ -44,7 +60,7 @@ layout: default
 <div id="get-in-touch">
   <div class="container">
 
-    
+
 
   </div>
 </div>

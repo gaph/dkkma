@@ -14,9 +14,10 @@ permalink: /blog/entry/:title
 # paginate_path: "/blog/page/:num"
 
 # img quick link
-project_img: /assets/images/projects/
-blog_img: /assets/images/blog/
-img: /assets/images/
+testimonial_img: https://dvxyu2dxv3uua.cloudfront.net/assets/images/testimonial/
+project_img: https://dvxyu2dxv3uua.cloudfront.net/assets/images/projects/
+blog_img: https://dvxyu2dxv3uua.cloudfront.net/assets/images/blog/
+img: https://dvxyu2dxv3uua.cloudfront.net/assets/images/
 
 category_archive:
   path: /blog/

@@ -12,7 +12,8 @@ layout: home
     <div class="center hidden-xs">
       <div class="call-out-home">
         <p>Branding. Web. UI.<br>
-        <a href="{{ site.baseurl }}/contact"><span class="call-out-link">get in touch</span></a></p>
+          <h2 class="page-slogan">Let's create something meaningful together.</h2>
+        <!-- <a href="{{ site.baseurl }}/contact"><span class="call-out-link">get in touch</span></a>--></p>
       </div>
       <div class="call-out-sub call-out-sub-home">
       </div>
@@ -32,18 +33,18 @@ layout: home
     <div class="row ">
       {% assign portfolio = site.portfolio | sort: 'date' | reverse %}
       {% for portfolio in portfolio limit:3  %}
-      <div class="col-md-3 preview">
+      <div class="col-sm-3 preview">
           <a class="image" href="{{ portfolio.url }}" style="background-image: url({{ site.project_img }}{{ portfolio.thumbnail }})"><div class="overlay"></div></a>
           <a href="{{ portfolio.url }}" target="_self">in <strong>{{ portfolio.category | join: ', '}}</strong></a>
       </div>
       {% endfor %}
-      <div class="col-md-3 preview title hidden-xs">Selected Projects</div>
+      <div class="col-sm-3 preview title hidden-xs">Selected Projects</div>
     </div>
 
     <div class="row">
       {% assign portfolio = site.portfolio | sort: 'date' | reverse %}
       {% for portfolio in portfolio limit:3 offset:3 %}
-      <div class="col-md-3 preview">
+      <div class="col-sm-3 preview">
         <a class="image" href="{{ portfolio.url }}" style="background-image: url({{ site.project_img }}{{ portfolio.thumbnail }})"><div class="overlay"></div></a>
         <a href="{{ portfolio.url }}" target="_self">in <strong>{{ portfolio.category | join: ', '}}</strong></a>
       </div>
@@ -56,12 +57,12 @@ layout: home
   <div data-sr class="subsection">
     <div class="row">
       {% for post in site.posts limit:3 %}
-      <div class="col-md-3 preview">
+      <div class="col-sm-3 preview">
         <a class="image" href="{{ post.url }}" style="background-image: url({{ site.blog_img }}{{ post.cover }})"><div class="overlay"></div></a>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </div>
       {% endfor %}
-      <div class="col-md-3 preview title hidden-xs">Latest Posts</div>
+      <div class="col-sm-3 preview title hidden-xs">Latest Posts</div>
     </div>
   </div>
 
@@ -152,7 +153,7 @@ layout: home
             </div>
           </div>
         </div>
-        <div class="col-md-3 title hidden-xs">Key Capabilities</div>
+        <div class="col-sm-3 title hidden-xs">Key Capabilities</div>
       </div>
     </div>
   </div>

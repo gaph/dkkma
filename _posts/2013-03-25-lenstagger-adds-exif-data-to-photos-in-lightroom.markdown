@@ -11,7 +11,7 @@ Many of us know this problem: If you’re shooting with an old lens, it likely d
 
 Luckily we’ve recently found a cool Lightroom plugin called LensTagger. Upon first launch, it will ask you to enter some details about your lens (Manufacturer, Focal Length, Aperture…). Once you’re done, it’s easy to apply the data to any number of images right inside of Lightroom.
 
-![Add EXIF Data to Photos with Lenstagger in Lightroom]({{ site.blog_img }}lenstagger-adds-exif-data-to-photos-in-lightroom-01.jpg)
+![Add EXIF Data to Photos with Lenstagger in Lightroom]({{ site.blog_img }}lenstagger-adds-exif-data-to-photos-in-lightroom-01.png)
 
 Please visit the developer website to download and find out more. [Developer Website][Website]
 

@@ -1,3 +1,4 @@
 _site
 .sass-cache
-Rakefile
+rackspace.fog
+cloudfiles_upload.rb

@@ -1,71 +1,65 @@
 <footer id="footer" class="site-footer">
+  <div class="footerbackground">
 
-  <div class="container">
+    <div class="container">
 
-    <div class="row">
-      <div class="col-sm-2">
+      <div class="row">
+        <div class="col-sm-2">
 
-        <h3>Overview</h3>
+          <h3>Overview</h3>
 
-        <a href="{{ site.baseurl }}/services">Services</a><br>
-        <a href="{{ site.baseurl }}/portfolio">Portfolio</a><br>
-        <a href="{{ site.baseurl }}/about">About</a><br>
-        <a href="{{ site.baseurl }}/blog">Blog</a><br>
-        <a href="{{ site.baseurl }}/testimonial">Testimonial</a><br>
-        <a href="{{ site.baseurl }}/contact">Contact</a>
+          <a href="{{ site.baseurl }}/services">Services</a><br>
+          <a href="{{ site.baseurl }}/portfolio">Portfolio</a><br>
+          <a href="{{ site.baseurl }}/about">About</a><br>
+          <a href="{{ site.baseurl }}/blog">Blog</a><br>
+          <a href="{{ site.baseurl }}/testimonial">Testimonial</a><br>
+          <a href="{{ site.baseurl }}/contact">Contact</a>
 
+        </div>
+        <div class="col-sm-2">
+
+          <h3><a href="{{ site.baseurl }}/services">Services</a></h3>
+
+          <a href="{{ site.baseurl }}/services/web-design">Web Design</a><br>
+          <a href="{{ site.baseurl }}/services/magento-ecommerce">E-Commerce</a><br>
+          <a href="{{ site.baseurl }}/services/Packaging">Packaging</a><br>
+          <a href="{{ site.baseurl }}/services/newsletter">Newsletter</a><br>
+
+        </div>
+        <div class="col-sm-6 text-center">
+          <img class="footer-logo" src="{{ "dkkma-logo-invert.png" | prepend: site.img }}" alt="DKKMA Logo">
+        </div>
+        <div class="col-sm-2">
+
+          <h3><a href="{{ site.baseurl }}/contact">Connect with us</a></h3>
+
+          <address>
+            <strong>dkkma Limited</strong><br>
+            60 Gresham Street<br>
+            London, EC2V 7BB<br>
+            <abbr title="UK">UK</abbr> +44 20 3318 4908 <br>
+            <abbr title="US">US</abbr> +1 646 693 7132 <br>
+          </address>
+
+          <address>
+            <strong>Hello UK</strong><br>
+            <a href="mailto:hellouk@dkkma.com">hellouk@dkkma.com</a><br>
+            <a href="https://plus.google.com/+Dkkma-EU/" rel="publisher">Find us on Google+</a>
+          </address>
+
+        </div>
       </div>
-      <div class="col-sm-2">
 
-        <h3>Services</h3>
+      <p>&copy; 2015 dkkma Limited. All rights reserved, D&amp;B D-U-N-S® Number 219876854 <a class="footerlink" href="{{ site.baseurl }}/privacy/">&nbsp Privacy</a>
 
-        <a href="{{ site.baseurl }}/services/web-design">Web Design</a><br>
-        <a href="{{ site.baseurl }}/services/magento-ecommerce">E-Commerce</a><br>
-        <a href="{{ site.baseurl }}/services/Packaging">Packaging</a><br>
-        <a href="{{ site.baseurl }}/services/newsletter">Newsletter</a>
-        <a href="{{ site.baseurl }}/services">See All</a><br>
-
-      </div>
-      <div class="col-sm-6 text-center">
-        <img style="max-width: 124px; margin-top: 60px;" src="{{ "dkkma-logo-invert.png" | prepend: site.img }}" alt="DKKMA Logo">
-      </div>
-      <div class="col-sm-2">
-
-        <h3><a href="{{ site.baseurl }}/contact">Connect with us</a></h3>
-
-        <address>
-          <strong>dkkma Limited</strong><br>
-          60 Gresham Street<br>
-          London, EC2V 7BB<br>
-          <abbr title="UK">UK</abbr> +44 20 3318 4908 <br>
-          <abbr title="US">US</abbr> +1 646 693 7132 <br>
-        </address>
-
-        <address>
-          <strong>Hello UK</strong><br>
-          <a href="mailto:hellouk@dkkma.com">hellouk@dkkma.com</a><br>
-          <a href="https://plus.google.com/+Dkkma-EU/" rel="publisher">Find us on Google+</a>
-        </address>
-
-      </div>
     </div>
-
-    <p>&copy; 2015 dkkma Limited. All rights reserved, D&amp;B D-U-N-S® Number 219876854 <a class="footerlink" href="{{ site.baseurl }}/privacy/">&nbsp Privacy</a>
 
   </div>
 
 </footer>
 
-  <script src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
-  <script src="{{ "/assets/js/framework.min.js" | prepend: site.baseurl }}"></script>
-  <script src="{{ "/assets/js/thirdparty.js" | prepend: site.baseurl }}"></script>
-
-  <!--
-  <script src="{{ "/assets/js/scrollReveal.min.js" | prepend: site.baseurl }}"></script>
-  <script src="{{ "/assets/js/jquery.smooth-scroll.min.js" | prepend: site.baseurl }}"></script>
-  <script src="{{ "/assets/js/d3.min.js" | prepend: site.baseurl }}"></script>
-  <script src="{{ "/assets/js/trianglify.min.js" | prepend: site.baseurl }}"></script>
-  -->
+  <script src="{{ "https://dvxyu2dxv3uua.cloudfront.net/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "https://dvxyu2dxv3uua.cloudfront.net/assets/js/thirdparty.min.js" | prepend: site.baseurl }}"></script>
 
   <script>
     window.sr = new scrollReveal();
@@ -75,39 +69,6 @@
     $('a').smoothScroll({
       speed: 1000,
     });
-  </script>
-
-  <script>
-    var t = new Trianglify({
-      x_gradient: ["#C04848", "#480048"],
-      y_gradient: ["#C04848", "#480048"],
-      noiseIntensity: 0,
-      cellpadding: 10,
-      cellsize: 160});
-      var pattern = t.generate(document.body.clientWidth, 1000);
-      document.getElementById("header").setAttribute('style', 'background-image: '+pattern.dataUrl);
-  </script>
-
-  <script>
-    var t = new Trianglify({
-      x_gradient: ["#303030", "#000000"],
-      y_gradient: ["#303030", "#000000"],
-      noiseIntensity: 0,
-      cellpadding: 10,
-      cellsize: 160});
-      var pattern = t.generate(document.body.clientWidth, document.body.clientHeight);
-      document.getElementById("footer").setAttribute('style', 'background-image: '+pattern.dataUrl);
-  </script>
-
-  <script>
-    var t = new Trianglify({
-      x_gradient: ["#FFF", "#FFF"],
-      y_gradient: ["#FFF", "#707070"],
-      noiseIntensity: 0,
-      cellpadding: 10,
-      cellsize: 160});
-      var pattern = t.generate(document.body.clientWidth, document.body.clientHeight);
-      document.getElementById("get-in-touch").setAttribute('style', 'background-image: '+pattern.dataUrl);
   </script>
 
   <script>
@@ -121,15 +82,6 @@
   </script>
 
   <script>
-  !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
-    arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
-    d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
-    insertBefore(d,q)}(window,document,'script','_gs');
-
-    _gs('GSN-044170-O');
-  </script>
-
-  <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -138,3 +90,37 @@
     ga('create', 'UA-38450442-1', 'auto');
     ga('send', 'pageview');
   </script>
+
+  <script>
+  jQuery(document).ready(function($) {
+      $("#saveForm").click(function(){
+          $email = $('#Field3').val();
+          $message = $('#Field7').val();
+          $id = $email;
+           // the user ID from your database
+          var userID = $id;
+          var properties = {
+              id: userID,
+              email: $id
+          };
+          _gs('identify', userID, properties);
+      });
+  });
+  </script>
+
+  {% if page.url contains "blog" %}
+    <div id="fb-root"></div>
+    <script async defer>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=920782367956128&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script async defer>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    </script>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  {% endif %}

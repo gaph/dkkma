@@ -2,25 +2,47 @@
 layout: page-custom
 title: Testimonial
 pagetitle: Testimonials
-slogan: Don't take our word for it!
+slogan: We pride ourself on producing graphic an web design services to the highest standards.
 permalink: testimonial/
 ---
 <div class="container">
 
   <div class="section center last">
 
-    {% assign testimonial = site.testimonial %}
-    {% for testimonial in testimonial %}
+      {% assign testimonial = site.testimonial %}
+      {% for testimonial in testimonial %}
 
-    <h3>{{ testimonial.person }}, {{ testimonial.client }}<br>
-      <small>{{ testimonial.city }}, {{ testimonial.country }}</small></h3>
-      <div class="columns-3">{{ testimonial.content }}</div>
+      <div class="row">
 
-      <p><a href="{{ site.baseurl }}/portfolio/entry/{{ testimonial.project }}"><strong>See</strong> what we've done for them</a>.
+        <div class="col-sm-1 portrait">
+
+          <img src="{{ site.testimonial_img }}{{ testimonial.portrait }}" alt="..." class="img-circle">
+
+        </div>
+        <div class="col-sm-11">
+
+          <h3 class="testimonial-excerpt">"{{ testimonial.excerpt }}"</h3>
+
+          <div class="columns-3">{{ testimonial.content }}</div>
+
+          <div class="rating">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          </div>
+
+          <p>{{ testimonial.person }}<br>
+          <small>{{ testimonial.client }}, {{ testimonial.city }}, {{ testimonial.country }} | <a href="{{ site.baseurl }}/portfolio/entry/{{ testimonial.project }}"><strong>View</strong> their Project</a></small>
+
+        </div>
+
+      </div>
 
       <hr>
 
-    {% endfor %}
+      {% endfor %}
 
   </div>
 

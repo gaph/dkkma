@@ -9,7 +9,7 @@ technology: "ExpressionEngine"
 excerpt: "This is an excerpt"
 thumbnail: insomnia-kl_thumb.jpg
 preview:
-project_url: https://dif-tube.com/
+project_url: 
 ---
 
 In cooperation with Insomnia KL, we've developed a vibrant, fast event and venue portal for Kuala Lumpur.

@@ -41,25 +41,36 @@
 </div>
 
 <script>
-var t = new Trianglify({
-x_gradient: ["#C04848", "#480048"],
-y_gradient: ["#C04848", "#480048"],
-noiseIntensity: 0.1,
-cellpadding: 10,
-cellsize: 100});
-var pattern = t.generate(document.body.clientWidth, 600);
-document.getElementById("header").setAttribute('style', 'background-image: '+pattern.dataUrl);
+  var t = new Trianglify({
+    x_gradient: ["#C04848", "#480048"],
+    y_gradient: ["#C04848", "#480048"],
+    noiseIntensity: 0,
+    cellpadding: 10,
+    cellsize: 160});
+    var pattern = t.generate(document.body.clientWidth, 1000);
+    document.getElementById("header").setAttribute('style', 'background-image: '+pattern.dataUrl);
 </script>
 
 <script>
-var t = new Trianglify({
-x_gradient: ["#C04848", "#480048"],
-y_gradient: ["#C04848", "#480048"],
-noiseIntensity: 0.1,
-cellpadding: 10,
-cellsize: 100});
-var pattern = t.generate(document.body.clientWidth, document.body.clientHeight);
-document.getElementById("splash").setAttribute('style', 'background-image: '+pattern.dataUrl);
+  var t = new Trianglify({
+    x_gradient: ["#303030", "#000000"],
+    y_gradient: ["#303030", "#000000"],
+    noiseIntensity: 0,
+    cellpadding: 10,
+    cellsize: 160});
+    var pattern = t.generate(document.body.clientWidth, document.body.clientHeight);
+    document.getElementById("footer").setAttribute('style', 'background-image: '+pattern.dataUrl);
+</script>
+
+<script>
+  var t = new Trianglify({
+    x_gradient: ["#FFF", "#FFF"],
+    y_gradient: ["#FFF", "#707070"],
+    noiseIntensity: 0,
+    cellpadding: 10,
+    cellsize: 160});
+    var pattern = t.generate(document.body.clientWidth, document.body.clientHeight);
+    document.getElementById("get-in-touch").setAttribute('style', 'background-image: '+pattern.dataUrl);
 </script>
 
 {% for post in site.posts %}

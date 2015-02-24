@@ -1,5 +1,4 @@
 @import url("framework.min.css");
-@import url("jquery.mmenu.css");
 
 body {
   min-height: 1000px;
@@ -96,11 +95,10 @@ h4 {
 }
 
 .site-footer {
-  background-color: #202020;
   min-height: 260px;
   color: #fff;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  background-image: url(https://dvxyu2dxv3uua.cloudfront.net/assets/images/background/background.jpg?1502161602);
+  background-size: cover;
 }
 
 img.grayscale {
@@ -124,6 +122,12 @@ img.grayscale:hover {
   font-size: 14px;
 }
 
+.footerbackground {
+  background-color: rgba(32, 32, 32, 0.7);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .socialfooter {
   width: 26px;
   height: 26px;
@@ -137,6 +141,8 @@ img.grayscale:hover {
   padding-top: 80px;
   padding-bottom: 80px;
   margin-bottom: -20px;
+  background-image: url(https://dvxyu2dxv3uua.cloudfront.net/assets/images/background/background_grey.png);
+  background-size: cover;
 }
 
 .site-header {
@@ -159,19 +165,25 @@ img.grayscale:hover {
 .sub .site-header {
 }
 
+.sub .site-header li a:hover {
+  text-decoration: none;
+  color: #B13F48;
+  text-shadow: none;
+}
+
 .site-header .logo {
   width: 120px;
   height: 31px;
   float: left;
   margin-top: 20px;
-  background: url(/assets/images/logo.png);
-  background-size: 120px;
+  background: url(https://dvxyu2dxv3uua.cloudfront.net/assets/images/logo.png);
+  background-size: 120px 31px;
   color: #FFF;
 }
 
 .sub .site-header .logo {
-  background: url(/assets/images/logo-dark.png);
-  background-size: 120px;
+  background: url(https://dvxyu2dxv3uua.cloudfront.net/assets/images/logo-dark.png);
+  background-size: 120px 31px;
 }
 
 .site-header .nav {
@@ -188,15 +200,18 @@ img.grayscale:hover {
   color: #FFF;
   font-family: "proxima-nova",sans-serif;
   font-size: 16px;
+  text-shadow: 1px 1px 2px #202020;
 }
 
 .sub .site-header li a {
   color: #202020;
+  text-shadow: none;
 }
 
 .site-header li a:hover {
   text-decoration: none;
   color: #B13F48;
+  text-shadow: 1px 1px 2px #ADADAD;
 }
 
 .site-header li .active {
@@ -207,7 +222,8 @@ img.grayscale:hover {
   text-align: center;
   margin: 0px 0 0px;
   border-bottom: 1px solid #EEE;
-  padding-top: 20px;
+  background: #480048;
+  background-color: #480048;
   background: -webkit-linear-gradient(149deg, #C04848 10%, #480048 90%); /* Chrome 10+, Saf5.1+ */
   background:    -moz-linear-gradient(149deg, #C04848 10%, #480048 90%); /* FF3.6+ */
   background:     -ms-linear-gradient(149deg, #C04848 10%, #480048 90%); /* IE10 */
@@ -215,11 +231,13 @@ img.grayscale:hover {
   background:         linear-gradient(149deg, #C04848 10%, #480048 90%); /* W3C */
   color: #FFF;
   width: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
   margin-top: 10px;
   margin-bottom: 30px;
   text-shadow: 1px 1px 2px #202020;
+  background-image: url(https://dvxyu2dxv3uua.cloudfront.net/assets/images/background/background.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-bottom:0px;
 }
 
 .page-header .page-title {
@@ -277,6 +295,10 @@ img.grayscale:hover {
   color: #B13F48;
 }
 
+.site-footer a {
+  color: #FFF;
+}
+
 .call-out {
   font-family: "league-gothic",sans-serif;
   font-size: 40px;
@@ -287,14 +309,14 @@ img.grayscale:hover {
 
 .call-out-home {
   font-family: "merriweather",serif;
-  font-size: 38px;
+  font-size: 48px;
   text-align: center;
-  margin-top: 140px;
+  margin-top: 0px;
   margin-bottom: 120px;
   margin-left: auto;
   margin-right: auto;
   color: #FFF;
-  min-width: 362px;
+  min-width: 680px;
 }
 
 .call-out-link {
@@ -333,6 +355,8 @@ img.grayscale:hover {
   margin-bottom: 10px;
   height: 105px;
   width: 100%;
+  background-repeat: no-repeat;
+  background-size: 245px 105px;
   background-size: cover;
   background-position: center center;
   display: block;
@@ -353,7 +377,7 @@ img.grayscale:hover {
   top: 0;
   width: 100%;
   height: 200px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.1);
   transition: all 1s;
   -webkit-transition: all 1s;
 }
@@ -469,11 +493,21 @@ img.grayscale:hover {
   width: 100%;
   min-height: 350px;
   margin-top: -80px;
+  background: #480048;
+  background-color: #480048;
   background: -webkit-linear-gradient(149deg, #C04848 10%, #480048 90%); /* Chrome 10+, Saf5.1+ */
   background:    -moz-linear-gradient(149deg, #C04848 10%, #480048 90%); /* FF3.6+ */
   background:     -ms-linear-gradient(149deg, #C04848 10%, #480048 90%); /* IE10 */
   background:      -o-linear-gradient(149deg, #C04848 10%, #480048 90%); /* Opera 11.10+ */
   background:         linear-gradient(149deg, #C04848 10%, #480048 90%); /* W3C */
+  min-height: 700px;
+  background-image: url(https://dvxyu2dxv3uua.cloudfront.net/assets/images/background/background.jpg);
+  background-size: cover;
+  text-shadow: 1px 1px 2px #202020;
+}
+
+.splash-full-height .page-slogan {
+  margin-top: 0px;
 }
 
 .splash-full-height .center {
@@ -638,11 +672,29 @@ img {
   margin-top: 20px;
   border-top: none;
 }
+.col-sm-1.portrait {
+  text-align: center;
+}
+.portrait .img-circle {
+  margin-bottom: 20px;
+}
+#get-in-touch {
+  padding-top: 0px;
+  padding-bottom: 40px;
+}
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #DDD;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: rgba(221, 221, 221, 0.2);
 }
 
 .mobilenav .navbar-default {
-  background-color: rgba(0, 0, 0, 0.6);
-  border-color: rgba(0, 0, 0, 0.2);
+  background-color: #202020;
+  border-color: #202020;
   border-radius: 5px;
   z-index: 200;
   margin-top: 20px;
@@ -873,4 +925,70 @@ p.4columns {
 
 h3.first {
   margin-top: 10px;
+}
+
+ul.parsley-errors-list.filled {
+  list-style: none;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.blackoverlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.testimonial-excerpt {
+  font-size: 26px;
+  margin-top: 0px;
+}
+
+.rating {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.share {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-top: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+}
+
+/* This gets Google to fall into place */
+.social {
+  font-size: 1px;
+}
+
+/* This gets Facebook to fall into place */
+.social iframe {
+  vertical-align: middle;
+}
+
+/* Set an optional width for your button wrappers */
+.social span {
+  display: inline-block;
+}
+
+/* Adjust the widths individually if you like */
+.social .google {
+  width: 66px;
+}
+.social .twitter {
+  width: 66px;
+}
+.social .facebook {
+  width: 58px;
+}
+
+.social .linkedin {
+  width: 58px;
+}
+
+.footer-logo {
+  width: 124px;
+  height: 32px;
+  margin-top: 60px;
 }

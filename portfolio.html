@@ -2,7 +2,7 @@
 layout: page-custom
 title: Portfolio
 pagetitle: Past projects
-slogan: What we've been busy with
+slogan: Many clients have been with us for years.
 permalink: portfolio/
 ---
 
@@ -10,7 +10,7 @@ permalink: portfolio/
   <div class="row ">
     {% assign portfolio = site.portfolio | sort: 'date' | reverse %}
     {% for portfolio in portfolio limit:6  %}
-    <div data-sr class="col-md-4 preview">
+    <div data-sr class="col-sm-4 preview">
       <div class="border-bottom">
         <a class="image large" href="{{ portfolio.url }}" style="background-image: url({{ site.project_img }}{{ portfolio.preview }})"><div class="overlay"></div></a>
         <a href="{{ portfolio.url }}" target="_self">in <strong>{{ portfolio.category | join: ', '}}</strong>, {{ portfolio.technology }}</a>
@@ -34,7 +34,7 @@ permalink: portfolio/
     <div class="row ">
       {% assign portfolio = site.portfolio | sort: 'date' | reverse %}
       {% for portfolio in portfolio limit:64  %}
-      <div data-sr class="col-md-3 preview">
+      <div data-sr class="col-sm-3 preview">
         <div class="border-bottom">
           <a class="image" href="{{ portfolio.url }}" style="background-image: url({{ site.project_img }}{{ portfolio.thumbnail }})"><div class="overlay"></div></a>
           <a href="{{ portfolio.url }}" target="_self">in <strong>{{ portfolio.category | join: ', '}}</strong></a>

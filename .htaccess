@@ -17,3 +17,23 @@ Redirect /pages/privacy https://www.dkkma.com/privacy
 
 # Redirect Privacy
 Redirect /de/angebot-webdesign https://www.dkkma.com/de/de/angebot-webdesign
+
+Redirect /services/magento-ecommerce https://www.dkkma.com/services/ecommerce/
+Redirect /services/magento-ecommerce/ https://www.dkkma.com/services/ecommerce/
+Redirect /services/Packaging https://www.dkkma.com/services/packaging/
+Redirect /portfolio/entry/immobilien-tv https://www.dkkma.com/portfolio/entry/dif-tube-deutschland/
+
+
+# http://gtmetrix.com/add-expires-headers.html
+
+<IfModule mod_expires.c>
+# Enable expirations
+ExpiresActive On
+# My favicon
+ExpiresByType image/x-icon "access plus 1 year"
+# Images
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/jpg "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+</IfModule>

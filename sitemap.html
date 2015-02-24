@@ -1,0 +1,25 @@
+---
+layout: page
+title: Sitemap
+pagetitle: Sitemap
+slogan: Quick access to DKKMA
+permalink: /sitemap/
+---
+
+  <h2>Pages</h2>
+
+    {% for page in site.pages %}
+    {% if page.layout != nil %}
+    {% if page.layout != 'redirect' %}
+    <h4><a href="{{ site.url }}{{ page.url | remove: 'index.html' }}">{{ page.title }}</a></h4>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+
+    <hr>
+
+  <h2>Posts</h2>
+
+    {% for post in site.posts %}
+    <h4><a href="{{ site.url }}{{ post.url | remove: 'index.html' }}">{{ post.title }}</a></h4>
+    {% endfor %}
