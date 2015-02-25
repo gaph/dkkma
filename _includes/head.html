@@ -13,6 +13,19 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
+    {% if page.url contains "blog" %}
+    <meta property="og:url"                content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="fb:app_id"             content="920782367956128" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="{{ page.title }}" />
+    <meta property="og:description"        content="{{ page.excerpt }}" />
+    <meta property="article:author"        content="https://www.facebook.com/hi.its.me.franz" />
+    <meta property="article:publisher"     content="https://www.facebook.com/dkkma" />
+    <meta property="article:published"     content="{{ page.date | date: '%Y-%m-%d' }}" />
+    <meta property="article:section"       content="{{ page.categories | join: ', ' | capitalize }}" />
+    <meta property="og:image"              content="{{ site.blog_img }}{{ page.cover }}" />
+    {% endif %}
+
     <script src="//use.typekit.net/qxu2bbz.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
 

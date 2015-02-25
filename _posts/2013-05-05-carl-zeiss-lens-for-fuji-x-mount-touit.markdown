@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Carl Zeiss lens for Fuji X-Mount - Touit"
-date:   2013-06-06 08:00:00
+date:   2013-05-05 08:00:00
 category: Photography
 excerpt: "Carl Zeiss just released detailed technical specification of the new Zeiss Lens for the Fuji X Mount (Fuji X-Pro1, Fuji X-E1). While an exact release date is not set yet, we expect them to be available in June 2013."
 cover: carl-zeiss-lens-for-fuji-x-mount-touit.jpg

@@ -108,6 +108,12 @@
   });
   </script>
 
+  <script>
+  $(document.links).filter(function() {
+      return this.hostname != window.location.hostname;
+  }).attr('target', '_blank');
+  </script>
+
   {% if page.url contains "blog" %}
     <div id="fb-root"></div>
     <script async defer>(function(d, s, id) {

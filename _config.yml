@@ -7,7 +7,7 @@ url: "https://www.dkkma.com" # the base hostname & protocol for your site
 twitter_username: dkkma
 github_username:  dkkma
 
-permalink: /blog/entry/:title
+permalink: /blog/entry/:title/
 
 # Blog index is outside of _blog
 # paginate: 10

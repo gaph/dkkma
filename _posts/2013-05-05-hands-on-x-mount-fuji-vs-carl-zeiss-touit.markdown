@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hands-On X-Mount Fuji vs Carl Zeiss Touit"
-date:   2013-06-06 08:00:00
+date:   2013-05-05 08:00:00
 category: Photography
 excerpt: "We just got hands on some high-res sample images taken with the new Zeiss Touit 12 mm and Touit 32 mm."
 cover: hands-on-x-mount-fuji-vs-carl-zeiss-touit.jpg
