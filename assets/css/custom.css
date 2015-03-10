@@ -20,6 +20,10 @@ body {
   font-size: 30pt;
 }
 
+ol, ul {
+  padding-left: 30px;
+}
+
 .blog p.meta {
   margin-bottom: 0px;
 }
@@ -97,7 +101,7 @@ h4 {
 .site-footer {
   min-height: 260px;
   color: #fff;
-  background-image: url(https://dvxyu2dxv3uua.cloudfront.net/assets/images/background/background.jpg?1502161602);
+  background-image: url(https://dvxyu2dxv3uua.cloudfront.net/assets/images/background/background.jpg);
   background-size: cover;
 }
 
@@ -199,7 +203,8 @@ img.grayscale:hover {
 .site-header li a {
   color: #FFF;
   font-family: "proxima-nova",sans-serif;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: bold;
   text-shadow: 1px 1px 2px #202020;
 }
 
@@ -236,7 +241,6 @@ img.grayscale:hover {
   text-shadow: 1px 1px 2px #202020;
   background-image: url(https://dvxyu2dxv3uua.cloudfront.net/assets/images/background/background.jpg);
   background-size: cover;
-  background-position: center;
   padding-bottom:0px;
 }
 
@@ -265,6 +269,9 @@ img.grayscale:hover {
 }
 
 .page-content {
+}
+
+.page-content p {
 }
 
 .site-header .contact {
@@ -309,14 +316,18 @@ img.grayscale:hover {
 
 .call-out-home {
   font-family: "merriweather",serif;
-  font-size: 48px;
+  font-size: 40px;
   text-align: center;
   margin-top: 0px;
   margin-bottom: 120px;
   margin-left: auto;
   margin-right: auto;
   color: #FFF;
-  min-width: 680px;
+  min-width: 730px;
+}
+
+.call-out-home a {
+  color: #fff;
 }
 
 .call-out-link {
@@ -859,6 +870,12 @@ p.4columns {
   background-color: #FFF;
   border: 1px solid #B13F48;
   border-radius: 4px;
+
+  cursor: default;
+  border: 1px solid #B13F48;
+  border-radius: 4px;
+  background-color: #B13F48;
+  color: #FFF;
 }
 
 #sidenav.affix {
@@ -933,6 +950,21 @@ ul.parsley-errors-list.filled {
   padding: 5px;
 }
 
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #B13F49;
+  background-color: rgba(242, 222, 222, 0.2);
+  border: 1px solid rgba(242, 222, 222, 0.2);
+}
+
+.parsley-errors-list {
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+
 .blackoverlay {
   background-color: rgba(0, 0, 0, 0.3);
   padding-top: 60px;
@@ -955,6 +987,13 @@ ul.parsley-errors-list.filled {
   padding: 20px;
   border-top: 1px solid #EEE;
   border-bottom: 1px solid #EEE;
+}
+
+.share-attribution {
+  margin-top: 20px;
+  padding: 20px;
+  border-top: 1px solid #EEE;
+  padding-bottom: 0px;
 }
 
 /* This gets Google to fall into place */
@@ -991,4 +1030,78 @@ ul.parsley-errors-list.filled {
   width: 124px;
   height: 32px;
   margin-top: 60px;
+}
+
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #C7254E;
+  background-color: #F9F2F4;
+  border-radius: 4px;
+  white-space: pre;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.page-image-margin {
+  margin-top: 16px;
+}
+
+.section h3 strong {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+blockquote {
+  border-left: none;
+  margin: .25em 0;
+  padding: .35em 40px;
+  line-height: 1.4;
+  position: relative;
+  font-style: italic;
+  margin-top: 20px;
+  margin-bottom: 14px;
+}
+
+blockquote:before {
+  display: block;
+  padding-left: 10px;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #777;
+}
+
+blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+blockquote cite:before {
+    content: "\2014 \2009";
+}
+
+h3.inline-heading {
+  margin-top: 20px;
+  line-height: 15px;
+}
+.benefits-4 .icon {
+  height: 101px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  fill: #485563;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.benefits-4 h3 {
+  text-align: center;
+}
+
+.nav>li.disabled>a:focus, .nav>li.disabled>a:hover {
+  border-color: #fff;
 }

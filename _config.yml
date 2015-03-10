@@ -13,11 +13,12 @@ permalink: /blog/entry/:title/
 # paginate: 10
 # paginate_path: "/blog/page/:num"
 
-# img quick link
+# img quick link https://dvxyu2dxv3uua.cloudfront.net
 testimonial_img: https://dvxyu2dxv3uua.cloudfront.net/assets/images/testimonial/
 project_img: https://dvxyu2dxv3uua.cloudfront.net/assets/images/projects/
 blog_img: https://dvxyu2dxv3uua.cloudfront.net/assets/images/blog/
 img: https://dvxyu2dxv3uua.cloudfront.net/assets/images/
+files: https://dvxyu2dxv3uua.cloudfront.net/assets/files/
 
 category_archive:
   path: /blog/
@@ -27,6 +28,8 @@ collections:
   - portfolio
   - services
   - testimonial
+  - case-study
+  - development
 
 collections:
   portfolio:
@@ -38,6 +41,9 @@ collections:
   testimonial:
     output: true
     permalink: /testimonial/:title/
+  development:
+    output: true
+    permalink: /dev/:title/
 
 # Navigation
 navigation:
@@ -57,6 +63,8 @@ navigation:
 servicenav:
  - title: Web Design
    url: /services/web-design
+ - title: ExpressionEngine
+   url: /services/expressionengine-development
  - title: eCommerce
    url: /services/ecommerce
  - title: Packaging

@@ -12,78 +12,176 @@ cover: frontpage003.jpg
     <div class="col-xs-2">
         <div id="sidenav" sidenav class="navbar-sidenav">
           <ul class="nav nav-tabs nav-stacked" role="tablist">
-            <li><a href="#"><strong>Introduction</strong></a></li>
+            <li class="disabled"><a href="#"><strong>Highlights</strong></a></li>
             <li><a href="#responsive">Responsive Design</a></li>
             <br>
-            <li><a href="#"><strong>Options</strong></a></li>
+            <li class="disabled"><a href="#"><strong>Options</strong></a></li>
             <li><a href="#static">Static</a></li>
             <li><a href="#oscms">Basic CMS</a></li>
             <li><a href="#eecms">ExpressionEngine</a></li>
+            <br>
+            <li class="disabled"><a href="#"><strong>Technology</strong></a></li>
+            <li><a href="#framework">Framework</a></li>
+            <br>
           </ul>
         </div>
     </div>
     <div class="col-xs-10">
 
-    <div class="section center">
+    <div class="section center" id="responsive">
 
-  <h3 id="responsive" class="first">Responsive Web Design</h3>
+    <h3 class="first"><strong>Highlights</strong><br>
+      Responsive Web Design</h3>
 
     <div class="columns-2">
-
       <p>A growing number of users use mobile phones and tablets to access the internet. These devices vary greatly in size and screen-resolution, requiring a custom-fit mobile site to display everything correctly.</p>
       <p>Unfortunately it is often too expensive and time intensive to maintain two different websites and automatic conversion tools and plugins do not offer the desired quality. The solution to this problem is simple: Create a website that flexibly adapts to each device automatically. This is known as responsive design.</p>
 
       <p>A modern website will automatically take care of tasks that were redundant and time intensive in the past. Responsive design will provide a standard layout that will be visible when you access the website through a desktop, while simultaneously creating a mobile layout similar in look and feel, accessed through mobile phones and tablets.</p>
       <p>Additionally, we make use of standards such as HTML5 to guarantee that even videos and media content will run flawlessly on mobile devices.</p>
+    </div>
+
+    <img alt="Responsive Web Design" src="{{ site.img }}responsive-web-design.jpg" class="page-image-margin">
 
     </div>
 
+    <div class="section center" id="static">
+
+      <h3><strong>Options</strong><br>
+      1. Static Website <small>ideal for small to medium sites, low overhead, based on Jekyll</small></h3>
+
+      <h4>Why should I go static?</h4
+      <p>A static website usually only consists of a few pages with content that does not change very often.  These sites have lower once-off cost to develop than dynamic sites, but if you need to make changes often, it could be advisable to rather go for a dynamic site, as costs are associated every time your developer needs to make changes to a static web page.</p>
+
+      <div class="row">
+        <div class="col-xs-10">
+
+            <h4>How does static compare?</h4>
+
+            <h5>PRO static</h5>
+            <ul>
+              <li><strong>Fast</strong>: All files are static, no processing required.</li>
+              <li><strong>Secure</strong>: No PHP, no Database, nothing to hack.</li>
+              <li><strong>No overhead</strong>: No updates. Nothing that needs fixing. </li>
+            </ul>
+
+            <h5>CONTRA static</h5>
+            <ul>
+              <li><strong>No dynamic content</strong>: The site is pre-generated so there's no dynamic content.</li>
+              <li><strong>No backend</strong>: You will need a HTML developer to make changes.</li>
+            </ul>
+
+          </div>
+          <div class="col-xs-2">
+
+          </div>
+        </div>
+
     </div>
 
-    <div class="section center">
+    <div class="section center" id="oscms">
 
-      <h3 id="static">Static Site <small>ideal for small to medium sites, low overhead, based on Jekyll</small></h3>
+      <h3>2. Basic CMS <small>ideal for small to medium sites with easy to use backend</small></h3>
 
-      <h4>Why Static</h4
-      <p>A static website usually only consists of a few pages with content that do not change very often.  These sites have lower once-off cost to develop than dynamic sites, but if you need to make changes often, it could be advisable to rather go for a dynamic site, as costs are associated every time your developer needs to make changes to a static web page.</p>
-
-      <h4>Jekyll</h4>
-      <p>Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.</p>
-
-      <h4>How does it compare?</h4>
-
-      <h5>PRO static</h5>
-      <ul>
-        <li>Crazy fast: No PHP, no MYSQL, can be hosted on a CDN</li>
-        <li>Crazy secure: No PHP, no MYSQL, no backend - nothing to hack</li>
-        <li>Low overhead: No PHP, no MYSQL, the browser only needs to download and render the website</li>
-      </ul>
-
-      <h5>CONTRA static</h5>
-      <ul>
-        <li>No dynamic content: The site is pre-generated so there's no dynamic content</li>
-        <li>No backend: It's not as easy to make changes. Basic HTML knowledge is required.</li>
-      </ul>
-
-    </div>
-
-    <div class="section center">
-
-      <h3 id="oscms">Basic CMS <small>ideal for small to medium sites, with backend</small></h3>
+      <h4>Why should I use a CMS?</h4>
       <p>A content management system (CMS) is a software that allows publishing, editing and modifying content without HTML knowledge. The core function and use of content management systems is to store and organize files, provide version-controlled access and enable dynamic elements.</p>
 
+      <h4>How does static compare?</h4>
+
+        <h5>PRO CMS</h5>
+        <ul>
+          <li><strong>Easy to modify</strong>: Edit your website without prior HTML knowledge.</li>
+          <li><strong>Dynamic</strong>: Display dynamic content such as company stats.</li>
+          <li><strong>Powerful</strong>: User accounts, e-commerce, property portal - everything is possible. </li>
+        </ul>
+
+        <h5>CONTRA CMS</h5>
+        <ul>
+          <li><strong>Initial cost</strong>: It takes more time to develop a CMS based website.</li>
+          <li><strong>Maintenance</strong>: A CMS always requires some maintenance, regular updates.</li>
+        </ul>
+
+        <blockquote>
+          <p>Once your website goes online, it is the editor who spends the most time working on the website. So we made the actual editing of your content as straighforward as possible.</p>
+        </blockquote>
+
+        <img alt="Open Source CMS Software" src="{{ site.img }}open-source-cms.png" class="page-image-margin">
+
     </div>
 
-    <div class="section last">
+    <div class="section center" id="eecms">
 
-      <h3 id="eecms">ExpressionEngine CMS <small>flagship, ready for your largest project</small></h3>
-      <p>For many years ExpressionEngine has been our go to CMS. It has served us and our clients well - it&#39;s easy to use and extremely robust "ExpressionEngine has never had a major security vulnerability, in eleven years and counting."</p>
+      <h3>3. ExpressionEngine CMS <small>flagship, ready for your most demanding project</small></h3>
+      <p>For many years ExpressionEngine has been our go to CMS. It has served us and our clients well - it&#39;s easy to use and extremely robust.</p>
+
+      <blockquote>
+        <p>ExpressionEngine has never had a major security vulnerability, in eleven years and counting.</p>
+      </blockquote>
 
       <p>Think EE is not up to the task? Sites such as www.barackobama.com run on EE with approx. over 10,000,000 visitors per month.</p>
-      <img alt="ExpressionEngine Web Design" src="{{ site.img }}expressionengine-control-panel.png" style="margin-top:10px;">
-      <p>Many of our clients ask us to take care of their website and manage the content. However, if you would like to do it yourself, we&#39;re always here if you need any help or guidance. Just drop us an e-mail or give us a call.</p>
+
+      <p><strong>Want to find out more?</strong><br>
+      <a href="{{ site.files }}Why_we_recommend_ExpressionEngine.pdf">Why we recommend ExpressionEngine over Wordpress</a> (PDF, 389 kb)</p>
+
+      <img alt="ExpressionEngine Control Panel" src="{{ site.img }}expressionengine-control-panel.png" class="page-image-margin">
 
     </div>
+
+    <div class="section last" id="framework">
+
+      <h3><strong>Technology</strong><br>
+      Framework</h3>
+
+      <h4>Supported browsers</h4>
+    <p>We support the <strong>latest versions</strong> of the following browsers and platforms. On Windows, <strong>we support Internet Explorer 8-11</strong>. More specific support information is provided below.</p>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <td></td>
+            <th>Chrome</th>
+            <th>Firefox</th>
+            <th>Internet Explorer</th>
+            <th>Opera</th>
+            <th>Safari</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Android</th>
+            <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+            <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+            <td class="text-muted" rowspan="3" style="vertical-align: middle;">N/A</td>
+            <td class="text-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Not Supported</td>
+            <td class="text-muted">N/A</td>
+          </tr>
+          <tr>
+            <th scope="row">iOS</th>
+            <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+            <td class="text-muted">N/A</td>
+            <td class="text-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Not Supported</td>
+            <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+          </tr>
+          <tr>
+            <th scope="row">Mac OS X</th>
+            <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+            <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+            <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+            <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+          </tr>
+          <tr>
+            <th scope="row">Windows</th>
+            <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+            <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+            <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+            <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+            <td class="text-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Not Supported</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>A lot of users on IE7? Upon request we are able to support old, legacy browsers.</p>
 
     </div>
   </div>

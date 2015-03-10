@@ -25,16 +25,22 @@ layout: default
         <h1 class="title">{{ page.title }}</h1>
         <p class="meta">by <strong>DKKMA</strong> on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 
-        {% if page.cover != blank %}<img class="cover" src="{{ site.blog_img }}{{ page.cover }}"> {% endif %}
-
       </header>
 
       <div class="row">
         <div class="col-md-10">
 
+          <hr>
+
           <article class="post-content justify">
             {{ content }}
           </article>
+
+          {% if page.source %}
+          <div class="share-attribution">
+            Inspired by <a href="{{ page.source }}" target="_blank">{{ page.sourcetitle }}</a>
+          </div>
+          {% endif %}
 
             <div class="share">
               <div class="social">
