@@ -6,7 +6,7 @@ city: "Arnstadt"
 country: "Germany"
 category: Digital
 technology: "ExpressionEngine"
-excerpt: "This is an excerpt"
+excerpt: "ExpressionEngine based web development project for a manufacturing business in Germany."
 thumbnail: metallbau-hoppenrath_thumb.jpg
 preview:
 project_url: http://metallbau-hoppenrath.de/

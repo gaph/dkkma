@@ -3,7 +3,6 @@ layout: post
 title:  "Sync Salesforce with Exchange and Mac"
 date:   2014-01-10 08:00:00
 category: Productivity
-tag: Business
 excerpt: "It's never been easy to find the right CRM solution but since we've recently settled on Salesforce, we started dealing with a lot of integration issues. Our biggest headache was the sync between Salesforce and Exchange."
 cover: sync-salesforce-with-exchange-and-mac.jpg
 ---

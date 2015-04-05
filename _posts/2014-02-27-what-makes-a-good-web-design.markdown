@@ -2,7 +2,9 @@
 layout: post
 title:  "What makes a good web design?"
 date:   2014-02-27 08:00:00
-category: Development
+category:
+- Design
+- Development
 excerpt: "If you plan to have your company website redone, it's often not only design that bothers you but that you may be losing potential customers."
 cover: what-makes-a-good-web-design.jpg
 ---

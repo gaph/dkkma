@@ -2,11 +2,7 @@
   <div class="sub-nav">
     <ul class="nav nav-pills">
       <li style="margin-top: 10px; margin-right: 10px;">Our speciality:</li>
-      {% for link in site.servicenav %}
-      {% assign current = nil %}
-      {% if page.url contains link.url %}
-      {% assign current = 'active' %}
-      {% endif %}
+      {% for link in site.servicenav | reverse %} {% assign current = nil %} {% if page.url contains link.url %} {% assign current = 'active' %} {% endif %}
       <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
         <a href="{{ link.url }}">{{ link.title }}</a>
       </li>

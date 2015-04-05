@@ -1,0 +1,6 @@
+@import url("pikaday.css");
+.pika-single {
+  color: #202020;
+  font-family: proxima-nova, sans-serif;
+  border-radius: 5px;
+}

@@ -3,55 +3,83 @@ layout: default
 ---
 
 {% include mobilenav.html %}
+{% if page.url contains 'expressionengine' %}
 
-  {% if page.url contains 'expressionengine' %}
+<style>
+  .page-header-services.expressionengine {
+  background: -webkit-linear-gradient(90deg, #283048 10%, #859398 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #283048 10%, #859398 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #283048 10%, #859398 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #283048 10%, #859398 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #283048 10%, #859398 90%); /* W3C */
+  }
 
-    <style>
-    .page-header-services.expressionengine {
-      background: -webkit-linear-gradient(90deg, #485563 10%, #29323c 90%); /* Chrome 10+, Saf5.1+ */
-      background:    -moz-linear-gradient(90deg, #485563 10%, #29323c 90%); /* FF3.6+ */
-      background:     -ms-linear-gradient(90deg, #485563 10%, #29323c 90%); /* IE10 */
-      background:      -o-linear-gradient(90deg, #485563 10%, #29323c 90%); /* Opera 11.10+ */
-      background:         linear-gradient(90deg, #485563 10%, #29323c 90%); /* W3C */
-    }
-    .page-header-services.expressionengine .expressionengine-logo {
-      width: 66px;
-      margin-bottom: 6px;
-      margin-right: 10px;
-    }
-    .page-header-services.expressionengine .page-slogan span, .page-header-services .page-title span {
-      background-color: rgba(0, 0, 0, 0);
-    }
-    </style>
+  .page-header-services.expressionengine .expressionengine-logo {
+    width: 66px;
+    margin-bottom: 6px;
+    margin-right: 10px;
+  }
 
-    <header class="page-header-services expressionengine">
-      <div class="container">
+  .page-header-services.expressionengine .page-slogan span,
+  .page-header-services .page-title span {
+    background-color: rgba(0, 0, 0, 0);
+  }
+</style>
 
-        <h1 class="page-title"><span><img class="expressionengine-logo" src="{{ site.img }}expressionengine-logo.png">{{ page.pagetitle }}</span></h1>
-        <h2 class="page-slogan"><span>{{ page.slogan }}</span></h2>
+<header class="page-header-services expressionengine">
+  <div class="container">
 
-      </div>
-    </header>
+    <h1 class="page-title">
+      <span>
+        <img class="expressionengine-logo" src="{{ site.img }}expressionengine-logo.png">{{ page.pagetitle }}</span>
+    </h1>
+    <h2 class="page-slogan">
+      <span>{{ page.slogan }}</span>
+    </h2>
 
-  {% else %}
+  </div>
+</header>
 
-    <header class="page-header-services" style="background-image: url({{ site.img }}{{ page.cover }})">
-      <div class="container">
+{% else %}
 
-        <h1 class="page-title"><span>{{ page.pagetitle }}</span></h1>
-        <h2 class="page-slogan"><span>{{ page.slogan }}</span></h2>
+<style>
+  .page-header-services.expressionengine {
+    background: -webkit-linear-gradient(90deg, #283048 10%, #859398 90%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(90deg, #283048 10%, #859398 90%); /* FF3.6+ */
+    background:     -ms-linear-gradient(90deg, #283048 10%, #859398 90%); /* IE10 */
+    background:      -o-linear-gradient(90deg, #283048 10%, #859398 90%); /* Opera 11.10+ */
+    background:         linear-gradient(90deg, #283048 10%, #859398 90%); /* W3C */
+  }
 
-      </div>
-    </header>
+  .page-header-services.expressionengine .expressionengine-logo {
+    width: 66px;
+    margin-bottom: 6px;
+    margin-right: 10px;
+  }
 
-  {% endif %}
+  .page-header-services.expressionengine .page-slogan span,
+  .page-header-services .page-title span {
+    background-color: rgba(0, 0, 0, 0);
+  }
+</style>
 
-{% include servicenav.html %}
+<header class="page-header-services expressionengine">
+  <div class="container">
+
+    <h1 class="page-title">
+      <span>{{ page.pagetitle }}</span>
+    </h1>
+    <h2 class="page-slogan">
+      <span>{{ page.slogan }}</span>
+    </h2>
+
+  </div>
+</header>
+
+{% endif %} {% include servicenav.html %}
 
 <article class="page-content justify">
   {{ content }}
 </article>
-
-{% include portfolio-excerpt.html %}
 
 {% include get-in-touch.html %}

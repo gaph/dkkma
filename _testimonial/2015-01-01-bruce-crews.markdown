@@ -10,7 +10,7 @@ country: "Canada"
 category: Digital
 technology: "ExpressionEngine, Stripe"
 excerpt: the patience and knowledge to turn our vision into reality
-project: on-air-audio-studios-inc
+project: on-air-audio-studios-inc/
 portrait: bruce.jpg
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Easily add Incoming Emails to a HubSpot CRM Contact"
 date:   2015-02-25 09:00:00
-category: Productivity
+category: Inbound Marketing
 excerpt: "There are a number of ways to add incoming emails to a HubSpot CRM Contact. Unfortunately none of the available solutions is truly automated."
 cover: add-incoming-emails-to-hubspot-crm-contact.jpg
 ---

@@ -7,7 +7,7 @@ city:   "Bangkok"
 country: "Thailand"
 category: Print
 technology: "Adobe Illustrator"
-excerpt: "This is an excerpt"
+excerpt: "Design of a banner for the promotion of the NEX Katana."
 thumbnail: nex-katana-banner_thumb.jpg
 preview:
 project_url:

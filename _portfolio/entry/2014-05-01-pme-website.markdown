@@ -6,10 +6,10 @@ city: "London"
 country: "United Kingdom"
 category: Digital
 technology: "Jekyll, static HTML"
-excerpt: "This is an excerpt"
+excerpt: "Development of a Jekyll based, static website for PME (Private Message Exchange)"
 thumbnail: pme_thumb.jpg
 preview: pme_preview.jpg
-project_url: https://www.pme.im/
+project_url: http://www.pme.im/
 ---
 
 PME (Private Message Exchange) provides Secure e-mail with built-in encryption, no advertising, and unlimited e-mail aliases to privacy conscious individuals.

@@ -2,7 +2,7 @@
 layout: post
 title:  "How PayPal can help you sell more products"
 date:   2014-01-16 08:00:00
-category: Productivity
+category: Business
 tag: Business
 excerpt: "If you are running a small, local store, your reach may be limited. Even though the products you sell are great, there are only that many people living in the area."
 cover: how-paypal-can-help-you-sell-more-products.jpg

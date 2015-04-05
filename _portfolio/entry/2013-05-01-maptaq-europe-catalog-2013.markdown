@@ -6,10 +6,10 @@ city: "Remich"
 country: "Luxembourg"
 category: Print
 technology: "ExpressionEngine"
-excerpt: "This is an excerpt"
+excerpt: "Development of a product catalog for an upcoming exception in Monaco."
 thumbnail: maptaq-europe-catalog-2013_thumb.jpg
-preview:  maptaq-europe-catalog-2013_preview.jpg
-project_url: 
+preview:  
+project_url:
 ---
 
 Development of a product catalog for an upcoming exception in Monaco.

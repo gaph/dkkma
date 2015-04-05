@@ -6,7 +6,7 @@ city: "Hong Kong"
 country: "Hong Kong"
 category: Print
 technology: "Adobe Illustrator"
-excerpt: "This is an excerpt"
+excerpt: "Packaging design for the upcoming Maptaq QCamz ECO Full HD 1080p."
 thumbnail: qcamz-eco-full-hd-1080p_thumb.jpg
 preview: qcamz-eco-full-hd-1080p_preview.jpg
 project_url:

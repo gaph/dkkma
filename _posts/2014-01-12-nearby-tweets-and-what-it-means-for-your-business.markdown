@@ -2,8 +2,9 @@
 layout: post
 title:  "‘Nearby’ Tweets and what it means for your business"
 date:   2014-01-12 08:00:00
-category: "Social Media"
-tag: Business
+category:
+- Social Media
+- Inbound Marketing
 excerpt: "Since 2010 Twitter allows users to add their current location to tweets. However, the feature is turned off by default and even if enabled, it has never been truly useful. In a recent experiment, Twitter tries to tackle this issue with a new ‘Nearby’ tab."
 cover: nearby-tweets-and-what-it-means-for-your-business.jpg
 ---

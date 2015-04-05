@@ -28,8 +28,8 @@ _Audiorecording Studio in Calgary, Canada_
 - Client dashboard to view previous order, download all recordings
 - Staff backend to process order, keep track of status and upload final recording
 
-#### DIF-Tube
-_Property Portal in Germany (currently invite-only)_
+#### Sky-Hype
+_International Property Portal_
 
 - Subscription model for property agents
 - Create, edit and delete your own property listing
@@ -37,9 +37,11 @@ _Property Portal in Germany (currently invite-only)_
 - Integration with Immobilienscout24 (Metasearch)
 
 ### Who do we work with?
-Corporations
-Agencies looking to outsource some work
-Charities
+
+- Corporations
+- Agencies looking to outsource some work
+- Charities
+
 Most notably GEW UK (Global Enterpreneuership UK), VVA (Vietnam Veterans of America) and the Malaysian-German Society
 
 ### How do we work?
@@ -67,7 +69,7 @@ For fellow developers and other agencies looking to outsource some work, here's 
 
 #### 4. Launch
 
-- Live server on Backspace or DigitalOcean
+- Live server on Rackspace or DigitalOcean
 - DNS hosting on AWS Route53
 - Filestorage on AWS S3
 - CDN either AWS Cloudfront or Akamai

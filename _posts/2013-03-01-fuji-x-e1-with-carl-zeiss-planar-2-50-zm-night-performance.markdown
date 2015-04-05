@@ -2,7 +2,7 @@
 layout: post
 title:  "Fuji X-E1 with Carl Zeiss Planar 2/50 ZM night performance"
 date:   2013-03-01 08:00:00
-category: Photography
+category: Design
 excerpt: "We’ve recently picked up a Carl Zeiss Planar 2/50 ZM (75 equivalent on the X-E1 crop sensor). It’s a solid lens, which performs especially well for portrait photography. Since we haven’t come across many images shot with this lens on a X-E1, we decided to post a few to show how it performs at night."
 cover: fuji-x-e1-with-carl-zeiss-planar-2-50-zm-night-performance.jpg
 ---

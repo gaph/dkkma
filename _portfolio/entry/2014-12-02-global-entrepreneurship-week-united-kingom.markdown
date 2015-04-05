@@ -6,7 +6,7 @@ city: "London"
 country: "UK"
 category: Print
 technology: "Adobe Illustrator"
-excerpt: "This is an excerpt"
+excerpt: "Design of marketing material for the GEW UK 2014 (Global Entrepreneurship Week UK 2014)"
 thumbnail: gew-uk_thumb.jpg
 preview: gew-uk_preview.jpg
 project_url: http://uk.gew.co/

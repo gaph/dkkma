@@ -1,3 +1,5 @@
 sources
 hashover/*
 hashover.js
+backup-code.html
+s3_website.yml

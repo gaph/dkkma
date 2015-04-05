@@ -6,7 +6,7 @@ city: "Kuala Lumpur"
 country: "Malaysia"
 category: Digital
 technology: "ExpressionEngine"
-excerpt: "This is an excerpt"
+excerpt: "ExpressionEngine development project for a multi-discipline company operating in South-East Asia"
 thumbnail: bionurture_thumb.jpg
 preview: bionurture_preview.jpg
 project_url: http://bionurture.co/

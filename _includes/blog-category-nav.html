@@ -1,7 +1,7 @@
 <div class="categories">
   <ul class="nav nav-pills">
     {% for category in site.categories %}
-    <li {% if page.url contains category[0] %}class="active"{% endif %} ><a href="/blog/{{ category[0] }}">{{ category[0] | capitalize }}</a></li>
+    <li {% if page.url contains category[0] %}class="active" {% endif %}><a href="/blog/{{ category[0] }}">{{ category[0] | capitalize }}</a></li>
     {% endfor %}
   </ul>
 </div>

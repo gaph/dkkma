@@ -2,7 +2,7 @@
 layout: post
 title:  "Hands-On X-Mount Fuji vs Carl Zeiss Touit"
 date:   2013-05-05 08:00:00
-category: Photography
+category: Design
 excerpt: "We just got hands on some high-res sample images taken with the new Zeiss Touit 12 mm and Touit 32 mm."
 cover: hands-on-x-mount-fuji-vs-carl-zeiss-touit.jpg
 ---
@@ -77,7 +77,7 @@ _Touit 1.8/32_
 
 The images have been provided to us by Michel from PCH
 
-[PCH Shop][Shop]
+[PCH Shop][Shop]<br>
 [PCH Blog][Blog]
 
 [Shop]: http://www.pch.be/

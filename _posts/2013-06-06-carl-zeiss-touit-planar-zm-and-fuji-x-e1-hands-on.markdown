@@ -2,7 +2,7 @@
 layout: post
 title:  "Carl Zeiss Touit / Planar ZM and Fuji X-E1 Hands On"
 date:   2013-06-06 08:00:00
-category: Photography
+category: Design
 excerpt: "Finally, hands-on: I’ve been waiting for the Zeiss Touit to arrive for quite some time. It’s the first real alternative to the Fuji Lens series on the X-E1 and X-1Pro. However, now that I hold it in my hands, I’m not as excited anymore."
 cover: carl-zeiss-touit-planar-zm-and-fuji-x-e1-hands-on.jpg
 ---

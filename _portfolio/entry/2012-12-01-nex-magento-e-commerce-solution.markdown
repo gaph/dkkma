@@ -9,7 +9,7 @@ category:
 - Digital
 - E-Commerce
 technology: "Magento Go"
-excerpt: "This is an excerpt"
+excerpt: "eCommerce solution based on Magento Go."
 thumbnail: nex-e-commerce_thumb.jpg
 preview:
 project_url:

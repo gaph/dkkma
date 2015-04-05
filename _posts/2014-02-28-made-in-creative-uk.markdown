@@ -2,7 +2,7 @@
 layout: post
 title:  "Made in creative UK - join and raise awareness"
 date:   2014-02-28 08:00:00
-category: Development
+category: Design
 excerpt: "Just recently we have heard of a campaign called 'Made in creative UK'. We were so moved by their aim, we decided to contribute - you should too! Many people, even those from the UK, are not even aware how many fantastic products are made here."
 cover: made-in-creative-uk.jpg
 ---

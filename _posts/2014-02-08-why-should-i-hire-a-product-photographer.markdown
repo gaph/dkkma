@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Add your business to Google ‘Places for Business’"
+title:  "Here's why you should hire a product photographer"
 date:   2014-02-09 08:00:00
-category: Business
+category: Design
 excerpt: "Don't ever underestimate the power of a professionally taken picture. One reason why Apple and co are so successful is that they know how to present their products."
 cover: why-should-i-hire-a-product-photographer.jpg
 ---

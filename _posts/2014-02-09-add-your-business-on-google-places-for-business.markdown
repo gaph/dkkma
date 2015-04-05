@@ -2,7 +2,9 @@
 layout: post
 title:  "Add your business to Google ‘Places for Business’"
 date:   2014-02-09 08:00:00
-category: "Social Media"
+category:
+- Social Media
+- Inbound Marketing
 excerpt: "A quick, efficient and free way to be found on Google Search is to list your business in Google's 'Places for Business'."
 cover: add-your-business-on-google-places-for-business.jpg
 ---

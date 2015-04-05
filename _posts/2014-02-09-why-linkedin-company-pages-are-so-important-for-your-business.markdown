@@ -2,7 +2,9 @@
 layout: post
 title:  "Why LinkedIn company pages are so important for your business?"
 date:   2014-02-09 08:00:00
-category: "Social Media"
+category:
+- Social Media
+- Inbound Marketing
 excerpt: "As of June 2013 LinkedIn counts 259 million professional users. That's 259 million potential leads!."
 cover: why-linkedin-company-pages-are-so-important-for-your-business.jpg
 ---

@@ -8,12 +8,13 @@ permalink: portfolio/
 
 <div class="container portfolio-old">
   <div class="row ">
-    {% assign portfolio = site.portfolio | sort: 'date' | reverse %}
-    {% for portfolio in portfolio limit:6  %}
-    <div data-sr class="col-sm-4 preview">
+    {% assign portfolio = site.portfolio | sort: 'date' | reverse %} {% for portfolio in portfolio limit:6 %}
+    <div class="col-sm-4 preview">
       <div class="border-bottom">
-        <a class="image large" href="{{ portfolio.url }}" style="background-image: url({{ site.project_img }}{{ portfolio.preview }})"><div class="overlay"></div></a>
-        <a href="{{ portfolio.url }}" target="_self">in <strong>{{ portfolio.category | join: ', '}}</strong>, {{ portfolio.technology }}</a>
+        <a class="image large" href="{{ portfolio.url }}" style="background-image: url({{ site.project_img }}{{ portfolio.preview }})">
+          <div class="overlay"></div>
+        </a>
+        <a href="{{ portfolio.url }}" target="_self">made with <strong>{{ portfolio.technology }}</strong></a>
       </div>
     </div>
     {% endfor %}
@@ -21,27 +22,28 @@ permalink: portfolio/
 
 </div>
 
-  <div class="section blank background large">
-    <div class="container">
-      <p>We're most proud of these projects, but you can find more great projects in specific categories, too. And if you don't see exactly what you're looking for, it's because we haven't made it for you yet -- but we can, and we will.</p>
-    </div>
+<div class="section blank background large">
+  <div class="container">
+    <p>We're most proud of these projects, but you can find more great projects in specific categories, too. And if you don't see exactly what you're looking for, it's because we haven't made it for you yet -- but we can, and we will.</p>
   </div>
+</div>
 
 <div class="container portfolio-old">
 
-  <h3>All recent projects</h3>
+  <h3>Recent projects</h3>
 
-    <div class="row ">
-      {% assign portfolio = site.portfolio | sort: 'date' | reverse %}
-      {% for portfolio in portfolio limit:64  %}
-      <div data-sr class="col-sm-3 preview">
-        <div class="border-bottom">
-          <a class="image" href="{{ portfolio.url }}" style="background-image: url({{ site.project_img }}{{ portfolio.thumbnail }})"><div class="overlay"></div></a>
-          <a href="{{ portfolio.url }}" target="_self">in <strong>{{ portfolio.category | join: ', '}}</strong></a>
-        </div>
+  <div class="row ">
+    {% assign portfolio = site.portfolio | sort: 'date' | reverse %} {% for portfolio in portfolio limit:64 %}
+    <div class="col-sm-3 preview">
+      <div class="border-bottom">
+        <a class="image" href="{{ portfolio.url }}" style="background-image: url({{ site.project_img }}{{ portfolio.thumbnail }})">
+          <div class="overlay"></div>
+        </a>
+        <a href="{{ portfolio.url }}" target="_self">in <strong>{{ portfolio.category | join: ', '}}</strong></a>
       </div>
-      {% endfor %}
     </div>
+    {% endfor %}
+  </div>
 </div>
 
 {% include get-in-touch.html %}

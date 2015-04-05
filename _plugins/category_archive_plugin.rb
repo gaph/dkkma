@@ -89,9 +89,9 @@ module Jekyll
       self.ext = '.html'
       self.basename = 'index'
       self.content = <<-EOS
-      {% for post in page.posts %}
+      {% for post in page.posts reversed %}
 
-      <div data-sr class="row">
+      <div class="row">
       <div class="col-sm-4">
       <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}"><img alt="{{ post.title }}" src="{{ site.blog_img }}{{ post.cover }}"></a>
       </div>

@@ -7,7 +7,7 @@ city:   "Hong Kong"
 country: "Hong Kong"
 category: Print
 technology: "Adobe Illustrator"
-excerpt: "This is an excerpt"
+excerpt: "Design of material for Exhibition in Hong Kong"
 thumbnail: maptaq-europe-hong-kong-trade-show-2013_thumb.jpg
 preview:
 project_url:

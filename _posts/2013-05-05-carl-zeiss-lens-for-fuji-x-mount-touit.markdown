@@ -2,7 +2,7 @@
 layout: post
 title:  "Carl Zeiss lens for Fuji X-Mount - Touit"
 date:   2013-05-05 08:00:00
-category: Photography
+category: Design
 excerpt: "Carl Zeiss just released detailed technical specification of the new Zeiss Lens for the Fuji X Mount (Fuji X-Pro1, Fuji X-E1). While an exact release date is not set yet, we expect them to be available in June 2013."
 cover: carl-zeiss-lens-for-fuji-x-mount-touit.jpg
 ---
@@ -206,7 +206,7 @@ One of the first images shot with the Touit 1.8/32. - [Source][Source4]
 [Brochure]: http://www.zeiss.com/content/dam/Photography/new/pdf/brochures/touit/touit_leaflet_en.pdf
 [28 MFT]: http://lenses.zeiss.com/content/dam/Photography/new/pdf/en/downloadcenter/datasheets_touit/touit_2812.pdf
 [18 MFT]: http://lenses.zeiss.com/content/dam/Photography/new/pdf/en/downloadcenter/datasheets_touit/touit_1832.pdf
-[Source1]: http://lenses.zeiss.com/camera-lenses/carl-zeiss-camera-lenses/camera_lenses/touit/touit1832.html
-[Source2]: http://lenses.zeiss.com/camera-lenses/carl-zeiss-camera-lenses/camera_lenses/touit/touit2812.html
+[Source1]: https://www.zeiss.com/camera-lenses/en_de/camera_lenses/touit/touit1832.html
+[Source2]: https://www.zeiss.com/camera-lenses/en_de/camera_lenses/touit/touit2812.html
 [Source3]: http://blogs.zeiss.com/photo/en/?p=3542
 [Source4]: http://blogs.zeiss.com/photo/en/?p=3542

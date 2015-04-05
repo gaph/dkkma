@@ -6,10 +6,10 @@ city: "Remich"
 country: "Luxembourg"
 category: Digital
 technology: "static HTML"
-excerpt: "This is an excerpt"
+excerpt: "Static HTML based web development project for Maptaq Europe SA."
 thumbnail: qmountz-website_thumb.jpg
 preview: qmountz-website_preview.jpg
-project_url: http://qmountz.com/
+project_url:
 ---
 
 MAPTAQ Europe SA approached us about a website for one of their most popular products: QMOUNTZ.

@@ -2,7 +2,9 @@
 layout: post
 title:  "Finally. A CRM that works for, not against us."
 date:   2014-02-25 08:00:00
-category: Productivity
+category:
+- Productivity
+- Business
 excerpt: "If you are a participant of this years Awwwards, we kindly ask you for your vote and feedback on our current website."
 cover: finally-a-crm-that-works-for-not-against-us.jpg
 ---

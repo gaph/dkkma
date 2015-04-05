@@ -1,0 +1,61 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+  background: -webkit-linear-gradient(90deg, #283048 10%, #859398 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #283048 10%, #859398 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #283048 10%, #859398 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #283048 10%, #859398 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #283048 10%, #859398 90%); /* W3C */
+}
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+}
+.slideout-open, .slideout-open body, .slideout-open .slideout-panel {
+  overflow: hidden;
+}
+.slideout-open .slideout-menu {
+  display: block;
+}
+.slideoutcontent {}
+.slideoutcontent ul {
+  padding-left: 0px;
+}
+.slideoutcontent ul li {
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+.slideoutcontent ul li:hover {
+  background-color: #394450;
+}
+.slideoutcontent ul li a {
+  color: #FFF;
+  font-family: proxima-nova, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px #202020;
+}
+.slideoutcontent ul li a:hover {
+  text-decoration: none;
+}
+.slideoutcontent .headline {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}

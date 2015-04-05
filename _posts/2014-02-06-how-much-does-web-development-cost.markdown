@@ -2,7 +2,9 @@
 layout: post
 title:  "How much does web development cost?"
 date:   2014-02-06 08:00:00
-category: Business
+category:
+- Design
+- Development
 tag: Business
 excerpt: "We often get this question: How much does a website costs? It's like buying a new car."
 cover: how-much-does-web-development-cost-update.jpg

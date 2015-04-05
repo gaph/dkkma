@@ -2,7 +2,9 @@
 layout: post
 title:  "Social Media: Tips to tweet more effectively"
 date:   2013-04-03 08:00:00
-category: Productivity
+category:
+- Social Media
+- Inbound Marketing
 tag: Business
 excerpt: "Twitter is one of the most popular social media networks in the world. It’s easy and free to get started and if you follow our tips, it will be rewarding too."
 cover: tips-to-tweet-more-effectively.jpg

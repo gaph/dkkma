@@ -1,39 +1,43 @@
 ---
 layout: page
-title: 404
+title: 404 Not Found
 pagetitle: 404 Not Found
 slogan: Unfortunately the page could not be found
 permalink: 404/
 ---
 
-<div data-sr class="subsection">
-    <div class="row ">
-      {% assign portfolio = site.portfolio | sort: 'date' | reverse %}
-      {% for portfolio in portfolio limit:3  %}
-      <div class="col-md-3 preview">
-        <a class="image" href="{{ portfolio.url }}" style="background-image: url({{ site.project_img }}{{ portfolio.thumbnail }})"><div class="overlay"></div></a>
-        <a href="{{ portfolio.url }}" target="_self">in <strong>{{ portfolio.category | join: ', '}}</strong></a>
-      </div>
-      {% endfor %}
-      <div class="col-md-3 preview title hidden-xs">Selected Projects</div>
+<div class="subsection">
+  <div class="row ">
+    {% assign portfolio = site.portfolio | sort: 'date' | reverse %} {% for portfolio in portfolio limit:3 %}
+    <div class="col-md-3 preview">
+      <a class="image" href="{{ portfolio.url }}" style="background-image: url({{ site.project_img }}{{ portfolio.thumbnail }})">
+        <div class="overlay"></div>
+      </a>
+      <a href="{{ portfolio.url }}" target="_self">in <strong>{{ portfolio.category | join: ', '}}</strong></a>
     </div>
-
-    <div class="row">
-      {% assign portfolio = site.portfolio | sort: 'date' | reverse %}
-      {% for portfolio in portfolio limit:3 offset:3 %}
-      <div class="col-md-3 preview">
-        <a class="image" href="{{ portfolio.url }}" style="background-image: url({{ site.project_img }}{{ portfolio.thumbnail }})"><div class="overlay"></div></a>
-        <a href="{{ portfolio.url }}" target="_self">in <strong>{{ portfolio.category | join: ', '}}</strong></a>
-      </div>
-      {% endfor %}
-    </div>
+    {% endfor %}
+    <div class="col-md-3 preview title hidden-xs">Selected Projects</div>
   </div>
 
-<div data-sr class="subsection">
+  <div class="row">
+    {% assign portfolio = site.portfolio | sort: 'date' | reverse %} {% for portfolio in portfolio limit:3 offset:3 %}
+    <div class="col-md-3 preview">
+      <a class="image" href="{{ portfolio.url }}" style="background-image: url({{ site.project_img }}{{ portfolio.thumbnail }})">
+        <div class="overlay"></div>
+      </a>
+      <a href="{{ portfolio.url }}" target="_self">in <strong>{{ portfolio.category | join: ', '}}</strong></a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="subsection">
   <div class="row">
     {% for post in site.posts limit:3 %}
     <div class="col-md-3 preview">
-      <a class="image" href="{{ post.url }}" style="background-image: url({{ site.blog_img }}{{ post.cover }})"><div class="overlay"></div></a>
+      <a class="image" href="{{ post.url }}" style="background-image: url({{ site.blog_img }}{{ post.cover }})">
+        <div class="overlay"></div>
+      </a>
       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </div>
     {% endfor %}

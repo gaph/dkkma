@@ -2,17 +2,18 @@
 layout: post
 title:  "Is Facebook an effective marketing tool for your business?"
 date:   2014-01-07 08:00:00
-category: Productivity
-tag: Business
+category:
+- Social Media
+- Inbound Marketing
 excerpt: "In a survey published in 2013, 73% of Retail / Wholesale / Consumer Goods companies responded that they have acquired a customer using a lead from Facebook."
 cover: is-facebook-an-effective-marketing-tool-for-your-business.jpg
 ---
 
-![Where do we get our customers?]({{ site.blog_img }}is-facebook-an-effective-marketing-tool-for-your-business-01.jpg)
+![Where do we get our customers?]({{ site.blog_img }}is-facebook-an-effective-marketing-tool-for-your-business-01.png)
 
 In a survey published in 2013, 73% of Retail / Wholesale / Consumer Goods companies responded that they have acquired a customer using a lead from Facebook. On the other hand, in the Banking / Insurance / Financial industry, the rate was much lower with only 33% of respondents saying that they acquired a customer trough Facebook.
 
-![Where do we get our customers?]({{ site.blog_img }}is-facebook-an-effective-marketing-tool-for-your-business-02.jpg)
+![Where do we get our customers?]({{ site.blog_img }}is-facebook-an-effective-marketing-tool-for-your-business-02.png)
 
 It’s also interesting to note that it depends on whom you are dealing with. B2C companies, not surprisingly, have the highest success rate on Facebook. Companies dealing B2B report a slightly higher success rate on LinkedIn (Professional Network).
 

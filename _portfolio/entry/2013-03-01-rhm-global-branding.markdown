@@ -7,7 +7,7 @@ city:   "Singapore"
 country: "Singapore"
 category: Print
 technology: "Adobe Illustrator"
-excerpt: "This is an excerpt"
+excerpt: "Branding for RMH Global."
 thumbnail: rmh-global-branding_thumb.jpg
 preview:
 project_url:

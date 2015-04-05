@@ -6,7 +6,7 @@ city: "Singapore"
 country: "Singapore"
 category: Digital
 technology: "static HTML"
-excerpt: "This is an excerpt"
+excerpt: "Development of a website for RMH Global"
 thumbnail: rmh-website_thumb.jpg
 preview:  rmh-website_preview.jpg
 project_url: http://www.rmhglobal.net/

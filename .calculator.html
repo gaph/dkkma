@@ -1,0 +1,89 @@
+---
+layout: page
+title: Web Design Estimate
+pagetitle: Web Design Estimate
+slogan: How much is our new site going to cost?
+permalink: custom-built-website-cost-calculator/
+---
+
+<div class="row">
+  <div class="col-sm-6">
+
+    <form id="quoteform" class="fixed-total">
+
+      <h2>Select the number of pages
+        <h2>
+
+          <select class="form-control">
+            <option data-price="1650" data-label="1 Page">1 Page</option>
+            <option data-price="1650" data-label="2 Page">2 Pages</option>
+            <option data-price="1650" data-label="3 Page">3 Pages</option>
+            <option data-price="1650" data-label="4 Page">4 Pages</option>
+            <option data-price="1750" data-label="5 Page">5 Pages</option>
+          </select>
+
+          <h2> Optional Features </h2>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="feat1" value="200" data-label="Blog / News"> Blog / News section
+            </label>
+          </div>
+
+          <select class="form-control">
+            <option data-price="0" data-label="No Logo Design">No Logo Design</option>
+            <option data-price="100" data-label="1 Concept">1 Concept</option>
+            <option data-price="200" data-label="2 Concepts">2 Concepts</option>
+            <option data-price="300" data-label="3 Concepts">3 Concepts</option>
+          </select>
+
+          <input type="text" data-mult="1" data-label="Amount of websites needed" />
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="feat3" value="50" data-label="Business Card"> Business Card
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="feat4" value="100" data-label="Multilingual"> Multilingual
+            </label>
+          </div>
+
+
+
+          <br />
+
+          <h4> E-mail:</h4>
+          <input type="email" />
+          <br />
+          <button id="submit"> Submit </button>
+
+    </form>
+
+  </div>
+</div>
+
+<script src="/assets/js/jquery.number.min.js"></script>
+<script src="/assets/js/simplepricecalc.js"></script>
+
+<script>
+  $(document).ready(function($) {
+    $("#quoteform").SimplePriceCalc();
+
+    $("#quoteform #submit").click(function(e) {
+      e.preventDefault();
+      currency: '$',
+        alert("Form submission has been disabled for demo purposes");
+    });
+  });
+
+  $(document).ready(function($) {
+    $("#quoteform").SimplePriceCalc({
+      currency: '£', // Place any symbol of your choosing here, default is the dollar sign
+      detailslabel: 'Details:', // Change the details text
+      totallabel: 'Total:' // Change the total text
+    });
+  });
+</script>

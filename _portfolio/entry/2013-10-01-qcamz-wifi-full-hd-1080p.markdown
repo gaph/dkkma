@@ -6,7 +6,7 @@ city: "Luxembourg"
 country: "Luxembourg"
 category: Print
 technology: "Adobe Illustrator"
-excerpt: "This is an excerpt"
+excerpt: "Design for one of their latest products, the  Maptaq QCAMZ Wifi FULL HD 1080p."
 thumbnail: qcamz-wifi-full-hd-1080p-packaging_thumb.jpg
 preview: qcamz-wifi-full-hd-1080p-packaging_preview.jpg
 project_url:

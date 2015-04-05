@@ -2,7 +2,7 @@
 layout: post
 title:  "Photo shoot - Take a rapper and an X-E1"
 date:   2013-04-21 08:00:00
-category: Photography
+category: Design
 excerpt: "Sneak peak of our last shooting. The challenge: Manual focus Carl Zeiss Planar 50mm f2 - attached to a crop sensor Fuji X-E1 and no flash."
 cover: photo-shoot-take-a-rapper-and-an-x-e1.jpg
 ---

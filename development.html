@@ -3,33 +3,34 @@ layout: page-custom
 title: Development
 pagetitle: DKKMA Development
 slogan: Things we've encountered
-permalink: dev/
+permalink: dev/ 
 ---
 
-  <div class="container blog">
+<div class="container development">
 
-    <div class="row">
-      <div class="col-sm-2">
+  <div class="row">
+    <div class="col-sm-2">
 
-        {% include blog-category-sidebar.html %}
+      {% include blog-category-sidebar.html %}
 
-      </div>
-      <div class="col-sm-8">
-
-        {% assign development = site.development %}
-        {% for development in development %}
-
-        <div data-sr class="row entry small">
-          <div class="col-sm-12">
-            {{ development.categories | join: ', ' | capitalize }}
-            <h2 class="title sub"><a href="{{ development.url }}">{{ development.title }}</a></h2>
-              <p class="meta sub">{{ development.date | date: "%b %-d, %Y" }}</p>
-          </div>
-        </div>
-
-        {% endfor %}
-
-        </div>
-
-      </div>
     </div>
+    <div class="col-sm-8">
+
+      {% assign development = site.development | reverse %} {% for development in development %}
+
+      <div class="row entry small">
+        <div class="col-sm-12">
+          <h2 class="title sub"><a href="{{ development.url }}">{{ development.title }}</a></h2>
+          <p class="meta sub">{{ development.categories | join: ', ' | capitalize }}
+            <span class="float-right">{{ development.date | date: "%b %-d, %Y" }}
+              <span>
+          </p>
+        </div>
+      </div>
+
+      {% endfor %}
+
+    </div>
+
+  </div>
+</div>

@@ -7,9 +7,9 @@ city:   "Kuala Lumpur"
 country: "Malaysia"
 category: Digital
 technology: "static HTML"
-excerpt: "This is an excerpt"
+excerpt: "Web design and branding for a healthcare and cosmetics product supplier based in Kuala Lumpur."
 thumbnail: nutriline-website_thumb.jpg
-preview: 
+preview:
 project_url: http://www.sensecellplatinum.com/
 ---
 

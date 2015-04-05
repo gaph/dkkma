@@ -2,6 +2,7 @@
 layout: dev
 title:  "ExpressionEngine URL title to Entry ID on Channel Entries tag"
 date:   2015-03-09 08:00:00
+excerpt: "Display a channel entry based on the url title."
 categories: ExpressionEngine
 version: 2.9.1
 packages: ExpressionEngine

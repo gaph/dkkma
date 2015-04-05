@@ -19,7 +19,8 @@ layout: default
 
   <div class="cover">
 
-    {% if page.preview != null %}<img class="preview" src="{{ site.project_img }}{{ page.preview }}">{% endif %}
+    {% if page.preview != null %}
+    <img class="preview" src="{{ site.project_img }}{{ page.preview }}">{% endif %}
     <h2> {{ page.title }} </h2>
 
   </div>
@@ -30,20 +31,19 @@ layout: default
 
         <p class="details">
 
-          <strong>Location</strong><br>
-          <span class="light">{{ page.city }}, {{ page.country }}</span><br>
-
-          {% if page.technology != null %}
+          <strong>Location</strong>
           <br>
-          <strong>Technology</strong><br>
-          <span class="light">{{ page.technology }}</span><br>
-          {% endif %}
-
-          {% if page.project_url != null %}
+          <span class="light">{{ page.city }}, {{ page.country }}</span>
+          <br> {% if page.technology != null %}
           <br>
-          <strong>Link</strong><br>
-          <a href="{{ page.project_url }}" target="_blank">{{ page.project_url }}</a>
-          {% endif %}
+          <strong>Technology</strong>
+          <br>
+          <span class="light">{{ page.technology }}</span>
+          <br> {% endif %} {% if page.project_url != null %}
+          <br>
+          <strong>Link</strong>
+          <br>
+          <a href="{{ page.project_url }}" target="_blank">{{ page.project_url }}</a> {% endif %}
 
         </p>
 
@@ -56,6 +56,4 @@ layout: default
 
 </div>
 
-{% include portfolio-excerpt.html %}
-
-{% include get-in-touch.html %}
+{% include portfolio-excerpt.html %} {% include get-in-touch.html %}

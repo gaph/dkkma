@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
   <body>
 
-    <div class="sub">
-      {% include header.html %}
-    </div>
+    {% include slideout.html %}
 
-    <div class="page-content">
+    <main id="panel">
+
+      <div class="sub">
+        {% include header.html %}
+      </div>
+
+      <div class="page-content">
         {{ content }}
-    </div>
+      </div>
 
-    {% include footer.html %}
+      {% include footer.html %}
+
+    </main>
 
   </body>
 

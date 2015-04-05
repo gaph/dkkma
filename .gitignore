@@ -2,3 +2,4 @@ _site
 .sass-cache
 rackspace.fog
 cloudfiles_upload.rb
+s3_website.yml

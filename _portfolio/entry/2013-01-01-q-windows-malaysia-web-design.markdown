@@ -7,7 +7,7 @@ city: "Kuala Lumpur"
 country: "Malaysia"
 category: Digital
 technology: "ExpressionEngine"
-excerpt: "This is an excerpt"
+excerpt: "Development of a ExpressionEngine based website for German window and door manufacturer."
 thumbnail: q-windows-website_thumb.jpg
 preview: q-windows-website_preview.jpg
 project_url: http://q-windows.com.my/

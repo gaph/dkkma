@@ -1,0 +1,33 @@
+<nav class="hidden-lg hidden-md" id="slideoutmenu">
+  <div class="slideoutcontent">
+    <header>
+
+      <a href="{{ site.baseurl }}/" class="logo"></a>
+
+      <p class="headline">Navigation</p>
+
+      <div class="nav">
+        <ul>
+          {% for link in site.navigation %} {% assign current = nil %} {% if page.url contains link.url %} {% assign current = 'active' %} {% endif %}
+          <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <p class="headline">Services</p>
+
+      <ul>
+
+        {% for link in site.servicenav %} {% assign current = nil %} {% if page.url contains link.url %} {% assign current = 'active' %} {% endif %}
+        <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+        {% endfor %}
+
+      </ul>
+
+    </header>
+  </div>
+</nav>

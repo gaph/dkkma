@@ -6,88 +6,197 @@ slogan: We have built up a loyal reputation and are passionate about what we do.
 permalink: /contact/
 ---
 
-<div class="container">
+<div class="subsection first">
+  <div class="container">
 
-  <h3 class="first">Drop us a note</h3>
+  <h2 class="first">Drop us a note</h2>
 
-  <div class="row">
-    <div class="col-md-6">
+  <div class="row contactform">
+    <div class="col-sm-10">
 
-      <p>We’d love to hear from you! Let us know what you think about DKKMA or any other general feedback or inquiry. As always, feel free to <a href="https://twitter.com/DKKMA">tweet at us</a>, or get in touch with <a href="{{ site.baseurl }}/support">support</a>.</p>
+      <form data-parsley-validate id="form74" name="form74" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://dunkelkammer.wufoo.eu/forms/pth0tvg0l7f3f4/#public">
 
-      <form data-parsley-validate id="form74" name="form74" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://dunkelkammer.wufoo.eu/forms/pth0tvg0l7f3f4/#public">
+        <div class="mail-client hidden-xs" id="mail-client">
+          <div class="ui-top">
+            <span class="compose">Compose</span>
+          </div>
+          <div class="mail-header">
+            <div class="line">
+              <div class="row">
+                <div class="col-sm-5">
+                  <light>From:</light>
+                  <div class="errorwrap" id="fromerror">
+                    <input data-parsley-class-handler="#fromerror" data-parsley-errors-container="#notificationname" data-parsley-error-message="It looks like you forgot to enter your name." id="Field1" name="Field1" type="text" class="form" tabindex="1"
+                    placeholder="Your Name" required>
+                  </div>
+                </div>
+                <div class="col-sm-7">
+                  < <div class="errorwrap" id="emailerror">
+                    <input data-parsley-class-handler="#emailerror" data-parsley-errors-container="#notificationemail" data-parsley-error-message="Please double check your email address." id="Field3" name="Field3" type="email" class="form" placeholder="Your Email"
+                    tabindex="2" required>
+                </div> >
+              </div>
+            </div>
+          </div>
+          <div class="line">
+            <light>To:</light> DKKMA Team
+            < hello@dkkma.com>
+          </div>
+          <div class="line">
+            <light>Subject:</light>
 
-        <input type=hidden id="Field9" maxlength="255" name="Field9" value="https://www.dkkma.com/contact" type="text">
-        <input type=hidden id="Field10" maxlength="255" name="Field10" value="Web" type="text">
+            <select data-parsley-ui-enabled="false" id="Field18" name="Field18" class="form upsize" tabindex="3">
+              <option value="Web Designer">Web Designer</option>
+              <option value="Web Developer">Web Developer</option>
+              <option value="ExpressionEngine Expert">ExpressionEngine Expert</option>
+              <option value="Inbound Marketing Consultant">Inbound Marketing Consultant</option>
+              <option value="App Designer">App Designer</option>
+              <option value="Multiple Services">Multiple Services</option>
+              <option value="General Enquiry">General Enquiry</option>
+            </select>
 
-            <div class="form-group">
-              <label for="Company">Message*</label>
-              <textarea name="Field7" id="Field7" class="form-control" rows="4" required></textarea>
+            <div class="float-right">
+              <light>Deadline: </light>
+
+              <select data-parsley-ui-enabled="false" id="Field19" name="Field19" class="form upsize" tabindex="4">
+                <option value="We need this yesterday!">We need this yesterday!</option>
+                <option value="In the next 1 to 3 months">In the next 1 to 3 months</option>
+                <option value="In the next 4 to 6 months">In the next 4 to 6 months</option>
+                <option value="Planning ahead. 6 months +">Planning ahead. 6 months +</option>
+              </select>
+
             </div>
 
-            <div class="form-group">
-              <label for="Last Name">Name*</label>
-              <input id="Field2" name="Field2" type="text" class="form-control" required>
+          </div>
+        </div>
+        <div class="mail-body">
+          <textarea class="form fullsize text typeit" id="Field7" name="Field7" spellcheck="true" rows="3" tabindex="5"></textarea>
+          <div id="notificationname"></div>
+          <div id="notificationemail"></div>
+        </div>
+        <div class="mail-footer">
+          <div class="row">
+            <div class="col-sm-1">
+              <button class="btn btn-default" id="saveForm" name="saveForm" type="submit" value="Submit" tabindex="6">Send</button>
             </div>
-
-            <div class="form-group">
-              <label for="Email">E-mail*</label>
-              <input id="Field3" name="Field3" type="email" class="form-control" required>
+            <div class="col-sm-3">
+              <div class="form file-input">
+                <span class="attachment">
+                  <light>Select attachment (max. 10MB)</light>
+              </div>
             </div>
-
-            <div class="form-group">
-              <label for="Company">Company*</label>
-              <input id="Field5" type="text" name="Field5" class="form-control" required>
+            <div class="col-sm-4">
+              <div class="form file-input">
+                <span class="attachment">
+                  <input id="Field16" name="Field16" type="file">
+                </span>
+              </div>
             </div>
+          </div>
+        </div>
+    </div>
 
-            <div class="form-group">
-              <label for="Website">What is your website URL?</label>
-              <input id="Field14" name="Field14" type="text" class="form-control">
-            </div>
+    <li class="hide">
+      <label for="comment">Do Not Fill This Out</label>
+      <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+      <input type="hidden" id="idstamp" name="idstamp" value="pecmT6FYxhGGzRAJkZcEtoPlq2gcP/k9nNgRuLFadxk=" />
+    </li>
 
-            <li class="hide">
-              <label for="comment">Do Not Fill This Out</label>
-              <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
-              <input type="hidden" id="idstamp" name="idstamp" value="pecmT6FYxhGGzRAJkZcEtoPlq2gcP/k9nNgRuLFadxk="/>
-            </li>
+    </form>
 
-            <button id="saveForm" name="saveForm" type="submit" value="Submit" class="btn btn-default" style="float: right;">Let's talk</button>
+    <form data-parsley-validate id="form74" name="form74" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://dunkelkammer.wufoo.eu/forms/pth0tvg0l7f3f4/#public">
 
-      </form>
+      <div class="visible-xs">
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">I need an expert...</label>
+          <br>
+          <select data-parsley-ui-enabled="false" id="Field18" name="Field18" class="form upsize" tabindex="3">
+            <option value="Web Designer">Web Designer</option>
+            <option value="Web Developer">Web Developer</option>
+            <option value="ExpressionEngine Expert">ExpressionEngine Expert</option>
+            <option value="Inbound Marketing Consultant">Inbound Marketing Consultant</option>
+            <option value="App Designer">App Designer</option>
+            <option value="Multiple Services">Multiple Services</option>
+            <option value="General Enquiry">General Enquiry</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Tell us more about your project</label>
+          <textarea id="Field7" name="Field7" spellcheck="true" class="form-control" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Deadline</label>
+          <br>
+          <select data-parsley-ui-enabled="false" id="Field19" name="Field19" class="form upsize" tabindex="4">
+            <option value="We need this yesterday!">We need this yesterday!</option>
+            <option value="In the next 1 to 3 months">In the next 1 to 3 months</option>
+            <option value="In the next 4 to 6 months">In the next 4 to 6 months</option>
+            <option value="Planning ahead. 6 months +">Planning ahead. 6 months +</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input id="Field3" name="Field3" type="email" class="form-control" placeholder="Your Email">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Name</label>
+          <input id="Field1" name="Field1" type="text" class="form-control" placeholder="Your Name">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputFile">File upload</label>
+          <input id="Field16" name="Field16" type="file" id="exampleInputFile">
+          <p class="help-block">Select attachment (max. 10MB)</p>
+        </div>
+
+        <button class="btn btn-default" id="saveForm" name="saveForm" type="submit" value="Submit" class="btn btn-default">Send</button>
+
+        <li class="hide">
+          <label for="comment">Do Not Fill This Out</label>
+          <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+          <input type="hidden" id="idstamp" name="idstamp" value="pecmT6FYxhGGzRAJkZcEtoPlq2gcP/k9nNgRuLFadxk=" />
+        </li>
+
+        <hr>
+
+    </form>
 
     </div>
-    <div class="col-md-5 col-md-offset-1">
 
-      <div class="row">
-        <div class="col-md-6">
+    </div>
+      <div class="col-sm-2 address">
 
-          <strong>Mailing Address</strong>
-          <br>
-          <br>
+        <p>We’d love to hear from you! Let us know what you think about DKKMA or any other general feedback or inquiry. As always, feel free to <a href="https://twitter.com/DKKMA">tweet at us</a>, or get in touch with <a href="{{ site.baseurl }}/support">support</a>.</p>
 
-          <address>
-            dkkma limited<br/>
-            60 Gresham Street<br/>
-            London, EC2V 7BB
-          </address>
+        <br>
+        <strong>Mailing Address</strong>
+        <br>
 
-        </div>
-        <div class="col-md-6">
+        <address>
+          dkkma limited
+          <br/> 60 Gresham Street
+          <br/> London, EC2V 7BB
+        </address>
 
-          <strong>Contact Info</strong>
-          <br>
-          <br>
+        <strong>Contact Info</strong>
+        <br>
 
-          <strong>UK</strong> +44 20 3318 4908<br/>
-          <strong>US</strong> +1 646 693 7132<br>
-          <a class="red" href="mailto:hellouk@dkkma.com">hellouk@dkkma.com</a>
+        <strong>UK</strong> +44 20 3318 4908
+        <br/>
+        <strong>US</strong> +1 646 693 7132
+        <br>
+        <a class="red" href="mailto:hellouk@dkkma.com">hello@dkkma.com</a>
 
-        </div>
       </div>
-
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d39732.91965677738!2d-0.12176285108084477!3d51.507574720364694!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a81b929a2dad%3A0x3eef0dc5e10025b9!2sdkkma+Ltd.!5e0!3m2!1sen!2s!4v1422140768526" width="100%" height="400" frameborder="0" style="border:0"></iframe>
-
     </div>
-
   </div>
+</div>
+
+<div class="contact-google-maps" id="contactpage" style="height:400px;">
+
 </div>

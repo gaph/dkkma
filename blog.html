@@ -1,52 +1,56 @@
 ---
 layout: page-custom
-title: Blog
+title: DKKMA Blog
 pagetitle: DKKMA Blog
-slogan: Things we talk about
+slogan: Design, Development and Inbound Marketing Blog
 permalink: blog/
 ---
 
-  <div class="container blog">
+<div class="container blog">
 
-    {% include blog-category-nav.html %}
+  {% include blog-category-nav.html %}
 
-    <div class="row">
-      <div class="col-sm-2">
+  <div class="row">
+    <div class="col-sm-2">
 
-        {% include blog-category-sidebar.html %}
+      {% include blog-category-sidebar.html %}
 
-      </div>
-      <div class="col-sm-8">
-
-        {% for post in site.posts limit:1 %}
-
-        <p class="meta">Date: {{ post.date | date: "%b %-d, %Y" }}, {{ post.categories | join: ', ' | capitalize }}</p>
-
-        <h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-          <a href="{{ post.url }}"><img class="cover" alt="{{ post.title }}" src="{{ site.blog_img }}{{ post.cover }}"></a>
-          <p class="justify">{{ post.excerpt }}</p>
-          <p><a alt={{ post.title }}"" href="{{ post.url }}">Read More >></a></p>
-
-        {% endfor %}
-
-        {% for post in site.posts offset:1 limit:10 %}
-
-        <div data-sr class="row entry small">
-          <div class="col-sm-4">
-            <a href="{{ post.url }}"><img alt="{{ post.title }}" src="{{ site.blog_img }}{{ post.cover }}"></a>
-          </div>
-          <div class="col-sm-8">
-            {{ post.categories | join: ', ' | capitalize }}
-            <h2 class="title sub"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-              <p class="meta sub">{{ post.date | date: "%b %-d, %Y" }}</p>
-              <p class="justify">{{ post.excerpt }}</p>
-              <p><a alt={{ post.title }}"" href="{{ post.url }}">Read More >></a></p>
-          </div>
-        </div>
-
-        {% endfor %}
-
-        </div>
-
-      </div>
     </div>
+    <div class="col-sm-8">
+
+      {% for post in site.posts limit:1 %}
+
+      <p class="meta">{{ post.categories | join: ', ' | capitalize }}
+        <small> | {{ post.date | date: "%b %-d, %Y" }}</small>
+      </p>
+
+      <h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <a href="{{ post.url }}">
+        <img class="cover" alt="{{ post.title }}" src="{{ site.blog_img }}{{ post.cover }}">
+      </a>
+      <p class="justify">{{ post.excerpt }}</p>
+      <p><a alt={{ post.title }} "" href="{{ post.url }}">Read More >></a></p>
+
+      {% endfor %} {% for post in site.posts offset:1 limit:10 %}
+
+      <div class="row entry subpreview">
+        <div class="col-sm-4">
+          <a href="{{ post.url }}">
+            <img alt="{{ post.title }}" src="{{ site.blog_img }}{{ post.cover }}">
+          </a>
+        </div>
+        <div class="col-sm-8">
+          {{ post.categories | join: ', ' | capitalize }}
+          <h2 class="title sub"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <p class="meta sub">{{ post.date | date: "%b %-d, %Y" }}</p>
+          <p class="justify">{{ post.excerpt }}</p>
+          <p><a alt={{ post.title }} "" href="{{ post.url }}">Read More >></a></p>
+        </div>
+      </div>
+
+      {% endfor %}
+
+    </div>
+
+  </div>
+</div>

@@ -7,7 +7,7 @@ city:   "New Taipei City"
 country: "Taiwan"
 category: Print
 technology: "Adobe Illustrator"
-excerpt: "This is an excerpt"
+excerpt: "Packaging design for the NEX Illumi CT."
 thumbnail: nex-illumi-ct_thumb.jpg
 preview: nex-illumi-ct_preview.jpg
 project_url:

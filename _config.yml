@@ -1,7 +1,8 @@
 # Site settings
-title: DKKMA
+title: DKKMA | ExpressionEngine Expert & Inbound Marketing Consultant
 email: hellouk@dkkma.com
-description: Step inside the world of advertising, design and inbound marketing agency DKKMA, based in London, United Kingdom.
+description: We are a creative design and development firm based in London, UK. We spezialize in developing complex ExpressionEngine based websites.
+
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.dkkma.com" # the base hostname & protocol for your site
 twitter_username: dkkma
@@ -9,16 +10,13 @@ github_username:  dkkma
 
 permalink: /blog/entry/:title/
 
-# Blog index is outside of _blog
-# paginate: 10
-# paginate_path: "/blog/page/:num"
-
-# img quick link https://dvxyu2dxv3uua.cloudfront.net
-testimonial_img: https://dvxyu2dxv3uua.cloudfront.net/assets/images/testimonial/
-project_img: https://dvxyu2dxv3uua.cloudfront.net/assets/images/projects/
-blog_img: https://dvxyu2dxv3uua.cloudfront.net/assets/images/blog/
-img: https://dvxyu2dxv3uua.cloudfront.net/assets/images/
-files: https://dvxyu2dxv3uua.cloudfront.net/assets/files/
+# img quick link
+testimonial_img: /assets/images/testimonial/
+project_img: /assets/images/projects/
+blog_img: /assets/images/blog/
+img: /assets/images/
+svg: /assets/svg/
+files: /assets/files/
 
 category_archive:
   path: /blog/
@@ -48,31 +46,23 @@ collections:
 # Navigation
 navigation:
  - title: Contact
-   url: /contact
- - title: Testimonial
-   url: /testimonial
+   url: /contact/
  - title: Blog
-   url: /blog
+   url: /blog/
  - title: About
-   url: /about
+   url: /about/
  - title: Portfolio
-   url: /portfolio
+   url: /portfolio/
  - title: Services
-   url: /services
+   url: /services/
 
 servicenav:
- - title: Web Design
-   url: /services/web-design
- - title: ExpressionEngine
-   url: /services/expressionengine-development
- - title: eCommerce
-   url: /services/ecommerce
- - title: Packaging
-   url: /services/packaging
- - title: Newsletter
-   url: /services/newsletter
- - title: Advertisement
-   url: /services/advertisement
+ - title: Web Design & Development
+   url: /services/web-design-and-development/
+ - title: ExpressionEngine Development
+   url: /services/expressionengine-developer/
+ - title: Inbound Marketing Consultation
+   url: /services/inbound-marketing/
 
 # Build settings
 markdown: kramdown

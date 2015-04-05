@@ -6,10 +6,10 @@ city: "Kuala Lumpur"
 country: "Malaysia"
 category: Digital
 technology: "ExpressionEngine"
-excerpt: "This is an excerpt"
+excerpt: "ExpressionEngine based site for a event portal in Kuala Lumpur"
 thumbnail: insomnia-kl_thumb.jpg
 preview:
-project_url: 
+project_url:
 ---
 
 In cooperation with Insomnia KL, we've developed a vibrant, fast event and venue portal for Kuala Lumpur.

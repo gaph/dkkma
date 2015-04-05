@@ -27,4 +27,4 @@ This little tool was about to revolutionize the way we work with clients. As soo
 
 Want to learn more about BugHerd? Check out their [homepage][homepage].
 
-[homepage]: http://www.bugherd.com/
+[homepage]: http://bugherd.com/

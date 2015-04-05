@@ -6,7 +6,7 @@ city: "Singapore"
 country: "Singapore"
 category: Digital
 technology: "static HTML"
-excerpt: "This is an excerpt"
+excerpt: "Development of a static website to showcase the NEX Illumi series."
 thumbnail: nex-illumi-website_thumb.jpg
 preview: nex-illumi-website_preview.jpg
 project_url: http://www.illumibulb.com/
