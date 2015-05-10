@@ -5,9 +5,10 @@ date:   2015-03-18 08:00:00
 category: Development
 excerpt: "All of the 20 largest ExpressionEngine sites are based in the United States."
 cover: the-20-largest-expressionengine-sites-2015.jpg
+author: Franz Geffke
 ---
 
-In over 6 years of working with ExpressionEngine, we've found it to be one of the most flexible and powerful CMS systems around. To proof just how powerful ExpressionEngine is, we've assembled a list of the 20 largest ExpressionEngine sites, based on their [Quantcast][quantcast] rating.
+In over 6 years of developing with and for ExpressionEngine, we've found it to be one of the most flexible and powerful CMS systems around. To proof just how powerful ExpressionEngine is, we've assembled a list of the 20 largest ExpressionEngine sites, based on their [Quantcast][quantcast] rating.
 
 ### Results
 

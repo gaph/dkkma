@@ -3,3 +3,6 @@ _site
 rackspace.fog
 cloudfiles_upload.rb
 s3_website.yml
+divshot.json
+.divshot-cache
+.DS_Store

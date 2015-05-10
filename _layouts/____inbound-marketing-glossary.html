@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+<header id="header" class="page-header">
+  <div class="blackoverlay sub">
+    <div class="container">
+
+      <h1 class="page-title">DKKMA Development</h1>
+      <h2 class="page-slogan">Things we've encountered</h2>
+
+    </div>
+  </div>
+</header>
+
+<div class="post container">
+
+  <div class="row">
+    <div class="col-md-9">
+
+      <header class="header">
+
+        <h1 class="title">{{ page.title }}</h1>
+        <p class="meta">by
+          <strong>DKKMA</strong> on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+
+      </header>
+
+      <div class="row">
+        <div class="col-md-10">
+
+          <hr>
+
+          <article class="post-content justify">
+            {{ content }}
+          </article>
+
+          {% if page.source %}
+          <div class="share-attribution">
+            Inspired by <a href="{{ page.source }}" target="_blank">{{ page.sourcetitle }}</a>
+          </div>
+          {% endif %}
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="get-in-touch">
+  <div class="container">
+
+    <h3>Post a comment on
+      <br>
+      <small>{{ page.title }}</small>
+    </h3>
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES * * */
+      var disqus_shortname = 'dunkelkammer';
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+  </div>
+</div>

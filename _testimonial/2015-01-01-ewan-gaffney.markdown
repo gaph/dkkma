@@ -10,7 +10,7 @@ country: "United Kingdom"
 category: Digital
 technology: "Adobe Illustrator"
 excerpt: a campaign that includes more than 3,000 events and 300,000 participants
-project: global-entrepreneurship-week-united-kingom/
+project: global-entrepreneurship-week-uk/
 portrait: ewan.jpg
 ---
 

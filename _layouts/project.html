@@ -2,58 +2,45 @@
 layout: default
 ---
 
-{% include mobilenav.html %}
+<div class="section">
+  <div class="container">
 
-<header id="header" class="page-header">
-  <div class="blackoverlay">
-    <div class="container">
+    <div class="cover text-center">
 
-      <h1 class="page-title">{{ page.category | join: ', ' }} Project</h1>
-      <h2 class="page-slogan">in {{ page.city }}</h2>
+      {% if page.preview != null %}
+      <img class="preview" src="{{ site.project_img }}{{ page.preview }}">{% endif %}
+      <h2> {{ page.title }} </h2>
 
     </div>
-  </div>
-</header>
 
-<div class="container project">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="intro">
 
-  <div class="cover">
+          <p class="details">
 
-    {% if page.preview != null %}
-    <img class="preview" src="{{ site.project_img }}{{ page.preview }}">{% endif %}
-    <h2> {{ page.title }} </h2>
+            <strong>Location</strong>
+            <br>
+            <span class="light">{{ page.city }}, {{ page.country }}</span>
+            <br> {% if page.technology != null %}
+            <br>
+            <strong>Technology</strong>
+            <br>
+            <span class="light">{{ page.technology }}</span>
+            <br> {% endif %} {% if page.project_url != null %}
+            <br>
+            <strong>Link</strong>
+            <br>
+            <a href="{{ page.project_url }}" target="_blank">{{ page.project_url }}</a> {% endif %}
 
-  </div>
+          </p>
 
-  <div class="row">
-    <div class="col-md-3">
-      <div class="intro">
-
-        <p class="details">
-
-          <strong>Location</strong>
-          <br>
-          <span class="light">{{ page.city }}, {{ page.country }}</span>
-          <br> {% if page.technology != null %}
-          <br>
-          <strong>Technology</strong>
-          <br>
-          <span class="light">{{ page.technology }}</span>
-          <br> {% endif %} {% if page.project_url != null %}
-          <br>
-          <strong>Link</strong>
-          <br>
-          <a href="{{ page.project_url }}" target="_blank">{{ page.project_url }}</a> {% endif %}
-
-        </p>
-
+        </div>
+      </div>
+      <div class="col-md-9 content">
+        {{ content }}
       </div>
     </div>
-    <div class="col-md-9 content">
-      {{ content }}
-    </div>
+
   </div>
-
 </div>
-
-{% include portfolio-excerpt.html %} {% include get-in-touch.html %}

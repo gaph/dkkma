@@ -1,19 +1,21 @@
 # Site settings
-title: DKKMA | ExpressionEngine Expert & Inbound Marketing Consultant
+title: Full Service Inbound Marketing Agency - DKKMA
 email: hellouk@dkkma.com
-description: We are a creative design and development firm based in London, UK. We spezialize in developing complex ExpressionEngine based websites.
-
+description: We are a full service inbound marketing agency based in London, UK. Work with us for web design, content marketing and lead nurturing.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.dkkma.com" # the base hostname & protocol for your site
 twitter_username: dkkma
 github_username:  dkkma
+production: true
 
 permalink: /blog/entry/:title/
 
 # img quick link
 testimonial_img: /assets/images/testimonial/
 project_img: /assets/images/projects/
+inbound_img: /assets/images/inbound-marketing-glossary/
 blog_img: /assets/images/blog/
+dev_img: /assets/images/dev/
 img: /assets/images/
 svg: /assets/svg/
 files: /assets/files/
@@ -42,31 +44,33 @@ collections:
   development:
     output: true
     permalink: /dev/:title/
+  inbound-marketing-glossary:
+    output: true
+    permalink: /inbound-marketing-glossary/:title/
 
 # Navigation
 navigation:
- - title: Contact
-   url: /contact/
- - title: Blog
-   url: /blog/
- - title: About
-   url: /about/
- - title: Portfolio
-   url: /portfolio/
  - title: Services
    url: /services/
+ - title: About
+   url: /about/
+ - title: Blog
+   url: /blog/
+ - title: Contact
+   url: /contact/
 
 servicenav:
  - title: Web Design & Development
-   url: /services/web-design-and-development/
+   url: /services/custom-web-design-and-development/
  - title: ExpressionEngine Development
    url: /services/expressionengine-developer/
  - title: Inbound Marketing Consultation
-   url: /services/inbound-marketing/
+   url: /services/inbound-marketing-consultation/
 
 # Build settings
 markdown: kramdown
-include: [.htaccess]
+include: ['.htaccess', '_offers']
+exclude: ['s3_website.yml', 'divshot.json', 'gulpfile.js']
 
 gems:
   - jekyll-sitemap

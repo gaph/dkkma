@@ -1,48 +1,48 @@
-<html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="DKKMA Limited">
   <link rel="icon" href="{{ " /assets/ico/favicon.png " | prepend: site.baseurl }}">
-
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml " | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}"/>
   {% if page.url contains "blog" %}
-  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-  <meta property="fb:app_id" content="920782367956128" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:description" content="{{ page.excerpt }}" />
-  <meta property="article:author" content="https://www.facebook.com/hi.its.me.franz" />
-  <meta property="article:publisher" content="https://www.facebook.com/dkkma" />
-  <meta property="article:published" content="{{ page.date | date: '%Y-%m-%d' }}" />
-  <meta property="article:section" content="{{ page.categories | join: ', ' | capitalize }}" />
-  <meta property="og:image" content="{{ site.blog_img }}{{ page.cover }}" />
+  <meta property="og:title" content="{{ page.title }}"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:image" content="{{ site.url }}{{ site.blog_img }}{{ page.cover }}"/>
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
+  <meta property="og:description" content="{{ page.excerpt }}"/>
+  <meta property="og:site_name" content="DKKMA">
+  <meta property="article:publisher" content="https://www.facebook.com/dkkma"/>
+  <meta property="article:published" content="{{ page.date | date: '%Y-%m-%d' }}"/>
+  <meta property="article:section" content="{{ page.categories | join: ', ' | capitalize }}"/>
+  {% if page.author == blank %}DKKMA{% else %}<meta property="article:author" content="https://plus.google.com/u/0/+FranzGeffkes/"/>{% endif %}
+  <meta property="fb:app_id" content="920782367956128"/>
   {% else %}
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <meta property="og:site_name" content="DKKMA">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <meta property="og:description" content="{{ page.excerpt }}"/>
+  <meta property="og:site_name" content="DKKMA">
   {% endif %}
+  <meta name="msvalidate.01" content="4256CD98BB32350C45CB6B5813B881FD"/>
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="stylesheet" href="{{ " /assets/css/custom.min.css " | prepend: site.baseurl }}">
+  {% if site.environment == 'local' %}
+  {% else %}
+  <script src="https://www.dkkma.com/assets/js/sni-check.js"></script>
+  {% endif %}
 
-  <script src="//use.typekit.net/qxu2bbz.js"></script>
+  <link rel="stylesheet" href="{{ "/assets/css/custom-new.min.css" | prepend: site.baseurl }}">
+  <script src="/assets/js/qxu2bbz.js"></script>
   <script>
     try {
       Typekit.load();
     } catch (e) {}
   </script>
-
-  <!-- Still using IE? ... Try Firefox, Chrome, ... -->
   <!--[if lt IE 9]>
-    <script src="https://dvxyu2dxv3uua.cloudfront.net/assets/js/html5shiv.min.js"></script>
-    <script src="https://dvxyu2dxv3uua.cloudfront.net/assets/js/respond.min.js"></script>
-    <![endif]-->
-    
+    <script src="/assets/js/html5shiv.min.js"></script>
+    <script src="/assets/js/respond.min.js"></script>
+  <![endif]-->
 </head>

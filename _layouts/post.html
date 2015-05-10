@@ -2,97 +2,45 @@
 layout: default
 ---
 
-{% include mobilenav.html %}
+<div class="section">
+  <div class="post container" vocab="https://schema.org/" typeof="NewsArticle">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
 
-<header id="header" class="page-header">
-  <div class="blackoverlay">
-    <div class="container">
+        <h1>{{ page.title }}</h1>
 
-      <h1 class="page-title">DKKMA Blog</h1>
-      <h2 class="page-slogan">Things we talk about</h2>
+        <article class="post-content justify">
+          {{ content }}
+        </article>
 
-    </div>
-  </div>
-</header>
+        {% include social_sharing.html %}
 
-<div class="post container" vocab="http://schema.org/" typeof="NewsArticle">
-
-  <div class="row sidebar-preview-wrapper" property="articleBody">
-    <div class="col-md-9">
-
-      <header class="header">
-
-        <h1 class="title" property="headline">{{ page.title }}</h1>
-        <p class="meta">by
-          <strong>DKKMA</strong> on {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-
-        {% if page.cover != blank %}
-        <img property="image" class="cover" src="{{ site.blog_img }}{{ page.cover }}"> {% endif %}
-
-        <!-- {% if page.imagecredits %}<small>Image by <a href="{{ page.imagelink }}">{{ page.imagecredits }}</a></small>{% endif %} -->
-
-      </header>
-
-      <div class="row">
-        <div class="col-md-10">
-
-          <article class="post-content justify">
-            {{ content }}
-          </article>
-
-          <div class="share">
-            <div class="social">
-              <span class="facebook">
-                <iframe src="https://www.facebook.com/plugins/like.php?href={{ site.url }}{{ page.url }}&amp;show_faces=false&amp;layout=button" scrolling="no" frameborder="0" style="height: 20px; width: 66px" allowTransparency="true"></iframe>
-              </span>
-              <span class="twitter">
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title }}" data-via="DKKMA" data-count="none">Tweet</a>
-              </span>
-              <span class="google">
-                <div class="g-plus" data-action="share" data-annotation="none" data-href="{{ site.url }}{{ page.url }}"></div>
-              </span>
-            </div>
-          </div>
-
-        </div>
       </div>
-
-    </div>
-    <div class="col-md-2 col-md-offset-1 sidebar-preview visible-lg visible-md">
-
-      <div class="headline">Read on</div>
-
-      {% for post in site.posts limit:6 %}
-
-      <h3 class="title{% if post.title == page.title %} active{% endif %}"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-
-      {% endfor %}
-
     </div>
   </div>
 </div>
-
-<div id="get-in-touch">
+{% if page.newsletter != false %}
+{% include social_newsletter.html %}
+{% endif %}
+<div class="section">
   <div class="container">
 
-    <h3>Post a comment on
+    <p class="title">Post a comment on
       <br>
       <small>{{ page.title }}</small>
-    </h3>
+    </p>
 
     <div id="disqus_thread"></div>
     <script type="text/javascript">
-      /* * * CONFIGURATION VARIABLES * * */
-      var disqus_shortname = 'dunkelkammer';
+        /* * * CONFIGURATION VARIABLES * * */
+        var disqus_shortname = 'dunkelkammer';
 
-      /* * * DON'T EDIT BELOW THIS LINE * * */
-      (function() {
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 

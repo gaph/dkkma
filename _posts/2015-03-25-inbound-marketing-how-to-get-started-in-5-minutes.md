@@ -3,10 +3,14 @@ layout: post
 title:  "Inbound Marketing How-To: Getting Started in 5 Minutes"
 date:   2015-03-25 08:00:00
 category:
-- Social Media
-- Inbound Marketing
+  - Social Media
+  - Inbound Marketing
+tags:
+  - 'Inbound Marketing'
+  - 'How-To'
 excerpt: "If you are a busy person, and I’m sure you are, this how-to will help you get started with Inbound Marketing without spending too much of your valuable time AND money."
 cover: inbound-marketing-how-to-get-started-in-5-minutes.jpg
+author: Franz Geffke
 ---
 
 If you are a busy person, and I’m sure you are, this how-to will help you get started with Inbound Marketing without spending too much of your valuable time AND money.
@@ -21,7 +25,7 @@ Essentially, inbound marketing is the opposite of outbound marketing. Rather tha
 
 ## What is Inbound Marketing?
 
-- Personalised: Targeted, quality content that answers prospects and customers questions and needs.
+- Personalized: Targeted, quality content that answers prospects and customers questions and needs.
 - Multi-Channel: Reach prospects where they are and want to interact with you.
 - Timing &amp; Analytics: Publish the right content at the right time and measure the reach (Number of visits, shares)
 
@@ -43,7 +47,7 @@ Having a great website is not enough. In order to get found by the right prospec
 Use keywords and phrases that your prospects use to find you or a close competitor on Google. Don’t hesitate to ask your customers how they found you and listen carefully what sort of problems they are looking to solve - there’s something to write about right there!
 
 #### Social Publishing
-Share your content to maximise reach. Concentrate on 1-2 social networks where your prospects spend most of their time. Do not try to do everything, everywhere. It’s only natural that one network will work better for you than another.
+Share your content to maximize reach. Concentrate on 1-2 social networks where your prospects spend most of their time. Do not try to do everything, everywhere. It’s only natural that one network will work better for you than another.
 
 ### 2. Convert
 

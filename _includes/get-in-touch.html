@@ -1,84 +1,77 @@
 <div id="get-in-touch">
   <div class="subsection get-in-touch">
     <div class="container">
-
+      {% if page.url == "/services/expressionengine-developer/" %}
       <p class="section-heading">
-        {% if page.url == "/services/inbound-marketing/" %}
-        Are you looking for an Inbound Marketing Consultant? Let's get in touch!
-        {% elsif page.url == "/services/expressionengine-developer/" %}
-        Are you looking for a Expert ExpressionEngine Developer? Let's get in touch!
-        {% elsif page.url == "/services/web-design/" %}
+        Are you looking for a Expert ExpressionEngine Developer?
+        <br>
+        <small>Let's get in touch!</small>
+      </p>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="cta-box">
+              <div class="row">
+                <div class="col-sm-5 col-sm-offset-1 individual-box left">
+                  <div class="content-box">
+                    <p class="headline">A polished website that helps generate more leads for your business.</p>
+                    <a href="/offers/expressionengine-website-development-project-enquiry/" class="btn link-a white">
+                      Business Website Enquiry
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-5 individual-box right">
+                  <div class="content-box">
+                    <p class="headline">A powerful platform to showcase your real estate properties - however you want it.</p>
+                    <a href="/offers/real-estate-website-development-project-enquiry/" class="btn link-a white">
+                      Real Estate Website Enquiry
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      {% if page.url == "/services/web-design/" %}
+      <p class="section-heading">
         Are you looking for a Web Designer & Developer? Let's get in touch!
-        {% else %}
-        In the right place, at the right time. Let's get in touch!
-        {% endif %}
         <br>
         <small>We will get back to you within 2 business hours.</small>
       </p>
-
-      <form data-parsley-validate id="form74" name="form74" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://dunkelkammer.wufoo.eu/forms/pth0tvg0l7f3f4/#public">
-
-        <input type=hidden id="Field9" maxlength="255" name="Field9" value="https://www.dkkma.com{{ page.url }}" type="text">
-        <input type=hidden id="Field10" maxlength="255" name="Field10" value="Web" type="text">
-
-        <li class="hide">
-          <label for="comment">Do Not Fill This Out</label>
-          <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
-          <input type="hidden" id="idstamp" name="idstamp" value="pecmT6FYxhGGzRAJkZcEtoPlq2gcP/k9nNgRuLFadxk=" />
-        </li>
-
-        <div class="natural-language">
-          Hi, my name is
-          <input data-parsley-ui-enabled="false" id="Field1" name="Field1" type="text" class="form" placeholder="Your Name" required>. I'm with
-          <input data-parsley-ui-enabled="false" name="Field5" id="Field5" type="text" class="form" placeholder="Company name" required>. We are looking for a
-
-          <select data-parsley-ui-enabled="false" id="Field18" name="Field18" class="form upsize">
-            {% if page.url == "/services/inbound-marketing/" %}
-            <option value="Inbound Marketing Consultant">Inbound Marketing Consultant</option>
-            <option value="Web Designer">Web Designer</option>
-            <option value="Web Developer">Web Developer</option>
-            <option value="ExpressionEngine Expert">ExpressionEngine Expert</option>
-            <option value="App Designer">App Designer</option>
-            <option value="Multiple Services">Multiple Services</option>
-            <option value="General Enquiry">General Enquiry</option>
-            {% elsif page.url == "/services/expressionengine-developer/" %}
-            <option value="ExpressionEngine Expert">ExpressionEngine Expert</option>
-            <option value="Web Designer">Web Designer</option>
-            <option value="Web Developer">Web Developer</option>
-            <option value="Inbound Marketing Consultant">Inbound Marketing Consultant</option>
-            <option value="App Designer">App Designer</option>
-            <option value="Multiple Services">Multiple Services</option>
-            <option value="General Enquiry">General Enquiry</option>
-            {% else %}
-            <option value="Web Designer">Web Designer</option>
-            <option value="Web Developer">Web Developer</option>
-            <option value="ExpressionEngine Expert">ExpressionEngine Expert</option>
-            <option value="Inbound Marketing Consultant">Inbound Marketing Consultant</option>
-            <option value="App Designer">App Designer</option>
-            <option value="Multiple Services">Multiple Services</option>
-            <option value="General Enquiry">General Enquiry</option>
-            {% endif %}
-          </select>
-
-          who can help us achieve our vision. You can reach me at
-          <input data-parsley-ui-enabled="false" id="Field3" name="Field3" type="email" class="form" placeholder="Your Email" required>.
-
-          <div class="collapse" id="expandmessage">
-            <textarea data-parsley-ui-enabled="false" name="Field7" id="Field7" class="form" rows="3" placeholder="What's on your mind?"></textarea>
+      {% endif %}
+      {% if page.url == "/services/inbound-marketing-consultation/" %}
+      <p class="section-heading">
+        What are you waiting for? Start growing your business now!
+        <br>
+        <small>We will get back to you within 2 business hours.</small>
+      </p>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="cta-box">
+              <div class="row">
+                <div class="col-sm-5 col-sm-offset-1 individual-box left">
+                  <div class="content-box">
+                    <p class="headline">Get a Free Inbound Marketing Assessment</p>
+                    <p>Do you want to know how to optimize your website to get more traffic and leads?</p>
+                    <a href="/offers/inbound-marketing-assessment/" class="btn link-a white">
+                      Get your free assessment
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-5 individual-box right">
+                  <div class="content-box">
+                    <p class="headline">Get in touch with an Inbound Marketing Specialist</p>
+                    <p>Send us some details and we'll be in touch within 2 business hours.</p>
+                    <a href="/offers/inbound-marketing-specialist/" class="btn link-a white">
+                      Start growing your business
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div class="bottom">
-
-            <button class="btn btn-default" id="saveForm" name="saveForm" type="submit" value="Submit" tabindex="6">Send Message</button>
-            <a data-toggle="collapse" href="#expandmessage" aria-expanded="false" aria-controls="expandmessage">
-              <small>&nbsp; Wait, I've got something else to say!</small>
-            </a>
-
-          </div>
-
         </div>
-      </form>
-
+      {% endif %}
     </div>
   </div>
 </div>

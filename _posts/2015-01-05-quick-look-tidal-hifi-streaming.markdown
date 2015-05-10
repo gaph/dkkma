@@ -5,6 +5,7 @@ date:   2015-01-05 08:00:00
 category: Launch
 excerpt: "In October 2014, the Scandinavian music streaming service Tidal launched in the UK and US with a library of over 25 million tracks in 16-bit/44.1 FLAC quality."
 cover: quick-look-tidal-hifi-streaming.jpg
+author: Franz Geffke
 ---
 
 In October 2014, the Scandinavian music streaming service Tidal launched in the UK and US with a library of over 25 million tracks in 16-bit/44.1 FLAC quality. Unlike Spotify, Tidal does not offer any free streaming (with adverts) but costs £19.99/month.

@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Global Entrepreneurship Week United Kingom"
+title: "Global Entrepreneurship Week UK"
 date: 2014-12-02 20:22:18
 city: "London"
 country: "UK"

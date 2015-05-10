@@ -1,0 +1,37 @@
+---
+layout: page-custom
+title: Inbound Marketing Glossary
+pagetitle: Inbound Marketing Glossary
+slogan: Everything you need to know about Inbound Marketing
+permalink: inbound-marketing-glossary/
+---
+
+<div class="section">
+  <div class="container development">
+    <div class="row">
+      <div class="col-sm-3">
+
+        {% include blog-category-sidebar.html %}
+
+      </div>
+      <div class="col-sm-9">
+
+        {% assign inbound = site.inbound-marketing-glossary | reverse %}
+        {% for inbound in inbound %}
+
+        <div class="row entry small">
+          <div class="col-sm-12">
+            <h2 class="title sub"><a href="{{ inbound.url }}">{{ inbound.title }}</a></h2>
+            <p>{{ inbound.excerpt }}</p>
+          </div>
+        </div>
+
+        <hr>
+
+        {% endfor %}
+
+      </div>
+
+    </div>
+  </div>
+</div>

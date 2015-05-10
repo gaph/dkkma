@@ -1,7 +1,20 @@
 <div class="categories">
-  <ul class="nav nav-pills">
+  <ul class="nav nav-pills visible-md visible-lg">
     {% for category in site.categories %}
     <li {% if page.url contains category[0] %}class="active" {% endif %}><a href="/blog/{{ category[0] }}">{{ category[0] | capitalize }}</a></li>
     {% endfor %}
   </ul>
+
+  <div class="dropdown visible-xs visible-sm">
+    <button class="btn btn-default dropdown-toggle full-width" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+      Select a different category
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      {% for category in site.categories %}
+      <li {% if page.url contains category[0] %}class="active" {% endif %}><a href="/blog/{{ category[0] }}">{{ category[0] | capitalize }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
 </div>

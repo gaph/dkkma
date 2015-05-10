@@ -1,8 +1,6 @@
-<header class="site-header">
+<header class="header">
   <div class="container">
-
-    <a href="{{ site.baseurl }}/" class="logo"></a>
-
+    <a href="/"><img class="logo" alt="DKKMA Inbound Marketing Agency" src="/assets/images/logo.png"></a>
     <div class="nav hidden-xs hidden-sm">
       <ul>
         {% for link in site.navigation %} {% assign current = nil %} {% if page.url contains link.url %} {% assign current = 'active' %} {% endif %}
@@ -12,8 +10,23 @@
         {% endfor %}
       </ul>
     </div>
-
   </div>
 </header>
 
-<body data-spy="scroll" data-target=".navbar-sidenav">
+{% if page.url != "/index.html" %}
+  {% if page.url contains "/blog/entry/" %}
+  <div style="background-image:url({{ site.blog_img }}{{ page.cover }});background-size:cover;background-position:center;">
+    <div class="subpage header" style="background-color: rgba(234, 98, 71, 0.8)">
+      <div class="container section text-center">
+        <h1>DKKMA Blog</h1>
+      </div>
+    </div>
+  </div>
+  {% else %}
+    <div class="subpage header">
+      <div class="container section text-center">
+        <h1>{% if page.pagetitle %}{{ page.pagetitle }}{% else %}{{ page.title }}{% endif %}</h1>
+      </div>
+    </div>
+  {% endif %}
+{% endif %}

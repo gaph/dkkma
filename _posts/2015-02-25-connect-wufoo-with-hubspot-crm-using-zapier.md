@@ -5,6 +5,7 @@ date:   2015-02-25 08:00:00
 category: Productivity
 excerpt: "Easily connect Wufoo and HubSpot CRM to automatically create new contacts / leads."
 cover: connect-wufoo-with-hubspot-crm.jpg
+author: Franz Geffke
 ---
 
 Manual data entry is not only time-consuming but really boring! Luckily we have tools such as Zapier to help us connect cloud apps that would have otherwise been 'incompatible'.

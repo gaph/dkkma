@@ -5,6 +5,7 @@ date:   2015-01-08 20:22:18
 category: Development
 excerpt: "DKKMA is a agency based in London, UK, which primarily develops applications written in PHP. Our preferred platform is ExpressionEngine which we have over 6 years of experience with."
 cover: expressionengine-developer-uk.jpg
+author: Franz Geffke
 ---
 
 DKKMA is a agency based in London, UK, which primarily develops applications written in PHP. Our preferred platform is ExpressionEngine which we have over 6 years of experience with.
@@ -42,7 +43,7 @@ _International Property Portal_
 - Agencies looking to outsource some work
 - Charities
 
-Most notably GEW UK (Global Enterpreneuership UK), VVA (Vietnam Veterans of America) and the Malaysian-German Society
+Most notably GEW UK (Global Entrepreneurship Week UK), VVA (Vietnam Veterans of America) and the Malaysian-German Society
 
 ### How do we work?
 For fellow developers and other agencies looking to outsource some work, here's a rough idea what tools we use for our usual ExpressionEngine development project.
@@ -58,7 +59,7 @@ For fellow developers and other agencies looking to outsource some work, here's 
 #### 2. Development
 
 - MAMP for local .dev environment
-- Atom as our favourite code editor
+- Atom as our favorite code editor
 - GIT / Github for version control
 
 #### 3. Testing
@@ -73,7 +74,7 @@ For fellow developers and other agencies looking to outsource some work, here's 
 - DNS hosting on AWS Route53
 - Filestorage on AWS S3
 - CDN either AWS Cloudfront or Akamai
-- Vistior stats via GoSquared
+- Visitor stats via GoSquared
 - Server stats via NewRelic
 
 ### Drop us a note
